@@ -17,9 +17,9 @@
 
 
 	<!-- Favicons -->
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon.png">
+	<!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon.png">
 	<link rel="shortcut icon" href="images/favicon.png">
-
+ -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/ico.css">
@@ -45,7 +45,7 @@
 
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/jquery.color.js"></script>
+	<!-- <script type="text/javascript" src="js/jquery.color.js"></script> -->
 	<!-- <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script> -->
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
@@ -428,15 +428,22 @@
 					</div><!--/row-->
 				</div><!--/news-letter-intro-->
 				<div class="col-sm-6">
-					<form class="form-inline" role="form" data-uk-scrollspy="{cls:'slideRight', repeat: true}">
-					  	<div class="input-group">
-					     	<input type="text" class="form-control" placeholder="Enter Your Email Address">
-					      	<span class="input-group-btn">
-					        <button class="btn btn-color" type="button">SUBSCRIBE!</button>
-					      </span>
-					   	</div><!-- /input-group -->
-					</form>
+					
+					<form class="subscribe-form form-inline" role="form" data-uk-scrollspy="{cls:'slideRight', repeat: true}" id="subscription-form">
 
+	                    <div class="input-group">
+	                        <input name="email" type="email" id="subscriber-email" class="form-control" placeholder="Enter your email address" required>
+                            <span class="input-group-btn">
+                                <input id="subscribe-button" type="submit" class="btn btn-color" value="SUBSCRIBE">
+                            </span>
+	                    </div><!--/input-grpup-->
+
+	                </form>
+
+	                <!-- SUCCESS OR ERROR MESSAGES -->
+	                <div id="subscription-response"></div>
+
+	                <p class="spam-text">* We will never spam you</p>
 				</div>
 			</div><!--/row-->
 		</div><!--/container-->
@@ -493,144 +500,6 @@
 			</div><!--/row-->
 		</div><!--/container-->
 	</div><!--/footer-->
-
-
-
-	<!--style switcher for theme-->
-	<div id="style-switcher">
-		<style type="text/css">
-			#style-switcher {
-			    width: 200px;
-				height: 398px;
-				background: rgba(0, 0, 0, 0.6);
-				position: fixed;
-				left: 0;
-				top: 125px;
-				color: lightcoral;
-				padding: 10px;
-				cursor: pointer;
-			}
-			#style-switcher-button {
-			    font-size: 33px;
-			    position: absolute;
-			    right: -42px;
-			    top: 0px;
-			    background: indianred;
-			    color: white;
-			    cursor: pointer;
-			}
-		</style>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap-formhelpers.min.css">
-		<div id="style-switcher-button">
-			<i class="fa fa-gears fa-fw"></i>
-		</div>
-		<div id="style-switcher-content">
-			<h4>Built in colors</h4>
-			<div>
-				<a href="#" data-style-name="alizarin" class="built-in-color-button">
-					<i style="color:#E74C3C;" class="fa fa-stop fa-3x"></i> 
-				</a>
-				<a href="#" data-style-name="amethyst" class="built-in-color-button">
-					<i style="color:#9b59b6;" class="fa fa-stop fa-3x"></i> 
-				</a>
-				<a href="#" data-style-name="carrot" class="built-in-color-button">
-					<i style="color:#e67e22;" class="fa fa-stop fa-3x"></i> 
-				</a>
-				<a href="#" data-style-name="emerald" class="built-in-color-button">
-					<i style="color:#2ECC71;" class="fa fa-stop fa-3x"></i> 
-				</a>
-				<a href="#" data-style-name="green-sea" class="built-in-color-button">
-					<i style="color:#1ABC9C;" class="fa fa-stop fa-3x"></i> 
-				</a>
-				<a href="#" data-style-name="indigo" class="built-in-color-button">
-					<i style="color:#1FB4DA;" class="fa fa-stop fa-3x"></i> 
-				</a>
-				<a href="#" data-style-name="peter-river" class="built-in-color-button">
-					<i style="color:#3799db;" class="fa fa-stop fa-3x"></i> 
-				</a>
-				<a href="#" data-style-name="wet-asphalt" class="built-in-color-button">
-					<i style="color:#34495E;" class="fa fa-stop fa-3x"></i> 
-				</a>
-			</div>
-
-			<h4>Unlimited color</h4>
-			<div>
-				<h5>Base</h5>
-				<div class="bfh-colorpicker" data-name="colorpicker-base" data-close="false" data-name="name"></div>
-				<h5>Shade</h5>
-				<div class="bfh-colorpicker" data-name="colorpicker-shade" data-close="false"></div>
-				<a id="preview" style="margin-top: 10px;width:100%;" href="#" class="btn btn-danger">Preview</a>
-				<a id="generate-css" style="margin-top:10px;width:100%;" href="#" class="btn btn-info" data-toggle="modal" data-target="#CSSModal">Generate CSS</a>
-			</div>
-		</div>
-		
-		<style type="text/css" id="previewColor"></style>
-
-		<script type="text/javascript" src="js/bootstrap-formhelpers-colorpicker.js"></script>
-		<script type="text/javascript">
-		$(document).ready(function(){
-			(function(){
-				var sw = $('#style-switcher'),
-					icon = $('#style-switcher-button > i');
-
-				sw.animate({left:"-200px"}, 2000);
-				
-
-				$('#style-switcher-button').click(function(){
-					if(sw.css("left")=='0px'){sw.animate({left:"-200px"}, 400);}
-					else{sw.animate({left:"0px"}, 400);}
-
-					icon.toggleClass("fa-arrow-left").toggleClass("fa-gears");
-				});
-
-				$('.built-in-color-button').click(function(){
-					$('#previewColor').text('');
-					var theme = $(this).attr("data-style-name");
-					$('#theme-color-file').attr("href", "css/colors/"+theme+".css");
-				});
-
-				$('#generate-css').click(function(){
-					var base = $('div[data-name="colorpicker-base"] .bfh-colorpicker-icon').css('background-color'),
-						shade = $('div[data-name="colorpicker-shade"] .bfh-colorpicker-icon').css('background-color');
-					$('#CSSmdalBody').text(getCSS(base, shade));
-				});
-
-				$('#preview').click(function(){
-					var base = $('div[data-name="colorpicker-base"] .bfh-colorpicker-icon').css('background-color'),
-						shade = $('div[data-name="colorpicker-shade"] .bfh-colorpicker-icon').css('background-color');
-					var css = getCSS(base, shade);
-					$('#previewColor').text(css);
-				});
-
-				function getCSS(base, shade){
-					return 'a{color: '+base+';} a:hover{color: '+shade+';} h2 span{color: '+base+';} .header{background-color: '+base+';} .logo a:hover{background-color: '+shade+';} .nav > ul > li > a:hover{background-color: '+shade+';} .slider{background-color: '+shade+';} .store-button{background-color: '+base+';} .store-button:hover{background-color: rgba(0, 0, 0, 0.1);} .single-feature i , .single-feature h2 {color: '+base+';} .single-feature:nth-child(2){background-color: '+base+';} .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {background-color: '+base+';} .news-letter{background-color: '+base+';} .btn-color {background-color: '+shade+';} .footer .fa-stack-2x{color: '+base+';}';
-				}
-				
-
-			})();
-		});
-		
-		</script>
-		</div>
-		<!-- Modal -->
-		<div class="modal fade" id="CSSModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-		      </div>
-		      <div class="modal-body">
-		      	<textarea style="width: 100%; height: 260px;" id="CSSmdalBody"></textarea>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary">Save changes</button>
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-	<!--/style switcher for theme-->
 
 
 	<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>

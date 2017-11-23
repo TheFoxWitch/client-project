@@ -89,7 +89,50 @@ $(document).ready(function(){
   		$(this).addClass("animated bounceIn").css('visibility', 'visible');
   	});
 	*/
-  	
+
+
+
+/*------------------------------------------
+ Subscribe form ajax
+ ------------------------------------------*/
+
+
+$('#subscription-form').submit(function(e) {
+
+    e.preventDefault();
+    var $form           = $('#subscription-form');
+    var submit          = $('#subscribe-button');
+    var ajaxResponse    = $('#subscription-response');
+    var email           = $('#subscriber-email').val();
+
+    $.ajax({
+        type: 'POST',
+        url: 'php/subscribe.php',
+        dataType: 'json',
+        data: {
+            email: email
+        },
+        cache: false,
+        beforeSend: function(result) {
+            submit.val("Joining...");
+        },
+        success: function(result) {
+            if(result.sendstatus == 1) {
+                ajaxResponse.html(result.message);
+                $form.fadeOut(500);
+            } else {
+                ajaxResponse.html(result.message);
+                submit.val("Join");
+            }
+        },
+        error: function(e){
+          console.log(e);
+        }
+    });
+
+});
 
 
 });//End Document ready
+
+
