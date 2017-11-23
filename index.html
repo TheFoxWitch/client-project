@@ -1,518 +1,674 @@
 <!DOCTYPE html>
-<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="en-US"><![endif]-->
-<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="en-US">	<![endif]-->
-<!--[if IE 9]><html class="ie ie9 lte9" lang="en-US"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html class="noIE" lang="en-US">
-<!--<![endif]-->
-<html>
+<html dir="ltr" lang="en-US">
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta charset="utf-8">
-	<title>APPiO || The Ultimate App Landing Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ThemeWagon" />
+    <meta name="Description" content="Rights Non-Profit Template">
+    <meta name="keywords" content="non-profit, child">
 
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Home | Bistro</title>
 
+    <!-- favicons
+    ============================================= -->
 
-	<!-- Favicons -->
-	<!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon.png">
-	<link rel="shortcut icon" href="images/favicon.png">
- -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/ico.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/colors/alizarin.css" id="theme-color-file">
-	<link rel="stylesheet" type="text/css" href="css/colors/color.css">
-	<!--theme color-->
-	
-	
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	  <script src="js/html5shiv.js"></script>
-	  <script src="js/respond.js"></script>
-	<![endif]-->
+    <meta name="theme-color" content="#ffffff">
 
-	<!--[if IE 8]>
-    <script type="text/javascript" src="js/selectivizr.js"></script>
-    <![endif]-->
+    
+    <!-- StyleSheets -->
+
+    <!-- Twitter Bootstrap -->
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css">
+
+    
+    <!-- Library Stylesheets -->
+    <link rel="stylesheet" href="assets/lib/owlcarousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/lib/owlcarousel/owl-carousel/owl.theme.css">
 
 
-	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<!-- <script type="text/javascript" src="js/jquery.color.js"></script> -->
-	<!-- <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script> -->
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-	<script type="text/javascript" src="js/uikit.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+    <!-- Google font Stylesheets -->
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 
+    <link href='https://fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+    <!-- <link href='https://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'> -->
+
+
+    <!-- Icon Stylesheets -->
+    <link rel="stylesheet" href="assets/lib/ionicons/css/ionicons.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome/css/font-awesome.min.css">
+
+
+
+
+
+
+    <!-- Custom Template Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script> 
+ 
+<script> 
+    google.maps.event.addDomListener(window, 'load', init);
+    var map;
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(53.480838,-2.243195),
+            zoom: 17,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.DEFAULT,
+            },
+            disableDoubleClickZoom: true,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            },
+            scaleControl: true,
+            scrollwheel: false,
+            panControl: true,
+            streetViewControl: true,
+            draggable : true,
+            overviewMapControl: true,
+            overviewMapControlOptions: {
+                opened: false,
+            },
+            mapTypeId: google.maps.MapTypeId.TERRAIN,
+            styles: [
+  {
+    "featureType": "landscape",
+    "stylers": [
+      {
+        "hue": "#F1FF00"
+      },
+      {
+        "saturation": -27.4
+      },
+      {
+        "lightness": 9.4
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "stylers": [
+      {
+        "hue": "#0099FF"
+      },
+      {
+        "saturation": -20
+      },
+      {
+        "lightness": 36.4
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "stylers": [
+      {
+        "hue": "#00FF4F"
+      },
+      {
+        "saturation": 0
+      },
+      {
+        "lightness": 0
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "stylers": [
+      {
+        "hue": "#FFB300"
+      },
+      {
+        "saturation": -38
+      },
+      {
+        "lightness": 11.2
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "stylers": [
+      {
+        "hue": "#00B6FF"
+      },
+      {
+        "saturation": 4.2
+      },
+      {
+        "lightness": -63.4
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "stylers": [
+      {
+        "hue": "#9FFF00"
+      },
+      {
+        "saturation": 0
+      },
+      {
+        "lightness": 0
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  }
+],
+        }
+        var mapElement = document.getElementById('map-canvas');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
+['Bistro', 'undefined', 'undefined', 'undefined', 'undefined', 53.4807593, -2.2426305000000184, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png']
+        ];
+        for (i = 0; i < locations.length; i++) {
+      if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+      if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+      if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+            marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+link = '';     }
+
+}
+</script>
+<style>
+    .gm-style-iw * {
+        display: block;
+        width: 100%;
+    }
+    .gm-style-iw h4, .gm-style-iw p {
+        margin: 0;
+        padding: 0;
+    }
+    .gm-style-iw a {
+        color: #4272db;
+    }
+</style>
 </head>
 
 <body>
 
-	<!--header-->
-	<div class="wrapper header navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="row logo-menu-wrap">
+<!-- main container -->
+<div class="body-content">
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
 
-					<div class="col-md-3 col-sm-12 logo">
-						<a href="#"><i class="fa fa-th-large fa-fw"></i>APPiO</a>
-					</div>
-					
-					<div class="col-md-9 col-sm-12 menu">
-						<a id="mobile-nav-btn" class="visible-xs" href="#"><i class="fa fa-chevron-down fa-2x"></i></a>
-						<div class="nav">
-							<ul>
+<!-- Fixed Top Navigation -->
+<nav id="fixedTopNav" class="navbar navbar-fixed-top main-navigation" role="navigation">
+    <div class="container">
 
-								<li><a href="#home"><i class="fa fa-home fa-fw"></i> <span>Home</span></a></li>
-								<li><a href="#features"><i class="fa fa-heart fa-fw"></i> <span>Features</span></a></li>
-								<li><a href="#gallary"><i class="fa fa-camera fa-fw"></i> <span>Gallary</span></a></li>
-								<li><a href="#FAQ"><i class="fa fa-question-circle fa-fw"></i> <span>FAQ</span></a></li>
-								<li><a href="#news-Letter"><i class="fa fa-envelope fa-fw"></i> <span>Subscribe</span></a></li>
+        <div class="navbar-header">
 
-							</ul>
-						</div>
-					</div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="ion-drag"></span>
+            </button>
 
-			</div><!--/row logo-menu-wrap-->
+            <!-- Logo -->
+            <div class="navbar-brand">
+                <span class="sr-only">Bistro</span>
+                <a href="index.html">
+                    BISTRO
+                </a>
+            </div>
+            <!-- /Logo -->
 
-		</div><!--/container-->
-	</div><!--/wrapper header-->
+        </div><!-- /.navbar-header -->
 
-	<div class="wrapper slider BeanBGAnimate" id="home">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 visible-xs">
-					<img class="slider-phone" src="images/iphone_half.png" data-uk-scrollspy="{cls:'slideLeft', repeat: true}" alt="">
-				</div>
-				<div class="col-md-7 col-sm-8" data-uk-scrollspy="{cls:'slideRight', repeat: true}">
-					<h1>The mega-purpose landing page</h1>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi.
-					</p>
-					<div class="download-now">
-						<a class="store-button" href="#"><i class="fa fa-apple fa-fw pull-left"></i> <span>APP STORE</span></a>
-						<a class="store-button" href="#"><i class="fa fa-android fa-fw pull-left"></i> <span>GOOGLE PLAY</span></a>
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="main-nav-collapse">
+            <ul class="nav navbar-nav navbar-right" role="menu">
 
-					</div>
-				</div><!--/col-sm-6-->
+                <li class="active">
+                    <a href="index.html"><span>Home</span></a>
+                </li>
 
-				<div class="col-md-5 col-sm-4" >
-					<img class="hidden-xs slider-phone" src="images/iphone_half.png" data-uk-scrollspy="{cls:'slideLeft', repeat: true}" alt="">
-					<!--<img class="visible-sm visible-xs" src="images/header-phone.png" data-uk-scrollspy="{cls:'slideLeft', repeat: true}" alt="">-->
-				</div><!--/col-sm-6-->	
+                <li class="">
+                    <a href="menu.html"><span>Menu</span></a>
+                </li>
 
-		</div><!--/row-->
-		</div>
-	</div><!-- wrapper -->
+                <li class="">
+                    <a href="gallery.html"><span>Gallery</span></a>
+                </li>
 
-	<!--features-->
-	<div class="wrapper features">
-		<div class="container">
-			<div class="row">
+                <li class="">
+                    <a href="giftcard.html"><span>Giftcard</span></a>
+                </li>
 
-				<div class="col-sm-4 single-feature">
-					<i class="icon-paperplane"></i>
-					<h2 data-uk-scrollspy="{cls:'fadeInOne', repeat: true}">Ultimate flat design</h2>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco.
-					</p>
-				</div><!--/single-feature-->
+                <li class="">
+                    <a href="catering.html"><span>Catering</span></a>
+                </li>
 
-				<div class="col-sm-4 single-feature">
-					<i class="icon-heart"></i>
-					<h2 data-uk-scrollspy="{cls:'fadeInOne', repeat: true}" >Unlimited Colors</h2>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco.
-					</p>
-				</div><!--/single-feature-->
+                <li class="">
+                    <a href="contact.html"><span>Contact</span></a>
+                </li>
 
-				<div class="col-sm-4 single-feature">
-					<i class="icon-params"></i>
-					<h2 data-uk-scrollspy="{cls:'fadeInOne', repeat: true}">Ultra Responsive</h2>
-					<p>
-					Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco.
-					</p>
-				</div><!--/single-feature-->
+            </ul>
+        </div>
+        <!-- /Navigation Links -->
 
-			</div><!--/row-->
-		</div><!--/container-->
-	</div><!--/features-->
-
-	<!--detailed-feature-->
-	<div id="features" class="wrapper detailed-feature">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-sm-6"><img data-uk-scrollspy="{cls:'slideRight', repeat: true}" src="images/illustration_left.png" alt=""></div>
-				<div class="col-sm-6" data-uk-scrollspy="{cls:'slideLeft', repeat: true}">
-					<h2>Fun &amp; <span>Playful</span> App</h2>
-					<p>
-						Donec scelerisque, nulla eget scelerisque commodo, ipsum risus volutpat felis, faucibus sagittis ante ipsum ac tellus. Nunc sem lorem, scelerisque vitae gravida sed, porttitor sodales odio. Sed tincidunt adipiscing malesua. Etiam mi ultrices fringilla sapien quis, mollis sollicitudin felis. Maecenas id malesuada metus.
-					</p>
-				</div>
-			</div><!--/row detailed-feature-->
-
-			<div class="row detailed-feature">
-				
-				<div class="col-sm-6" data-uk-scrollspy="{cls:'slideRight', repeat: true}">
-					<h2><span>Colorful</span> and flat UI</h2>
-					<p>
-						Donec scelerisque, nulla eget scelerisque commodo, ipsum risus volutpat felis, faucibus sagittis ante ipsum ac tellus. Nunc sem lorem, scelerisque vitae gravida sed, porttitor sodales odio. Sed tincidunt adipiscing malesua. Etiam mi ultrices fringilla sapien quis, mollis sollicitudin felis. Maecenas id malesuada metus.
-					</p>
-				</div>
-
-				<div class="col-sm-6"><img data-uk-scrollspy="{cls:'slideLeft', repeat: true}" src="images/illustration_right.png" alt=""></div>
-				
-			</div><!--/row detailed-feature-->
-		</div><!--/container-->
-	</div><!--/detailed-feature-->
-
-	<!--gallary-->
-	<div class="wrapper gallary" id="gallary">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-
-					<div class="gallary-intro" data-uk-scrollspy="{cls:'slideLeft', repeat: true}">
-						<h2>Check the product <span>screenshots</span></h2>
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit teger vulputate nisl eu odio porttitor ac pulvinar nunc congue.
-							Curabitur pretium luctus lacus nec nisl eu odio ac pulvinar nunc congue.</p>
-					</div><!--/gallary-intro-->
-
-					<div id="owl-wrap">
-					 	<div class="item">
-							<img src="images/gallery/1.jpg" alt="">
-							<a href="images/gallery/1.jpg" rel="prettyPhoto[screenshots]"><span class="overlay"></span></a>
-						</div>
-	 
-						<div class="item">
-							<img src="images/gallery/2.jpg" alt="">
-							<a href="images/gallery/2.jpg" rel="prettyPhoto[screenshots]"><span class="overlay"></span></a>
-						</div>
-
-						<div class="item">
-							<img src="images/gallery/3.jpg" alt="">
-							<a href="images/gallery/3.jpg" rel="prettyPhoto[screenshots]"><span class="overlay"></span></a>
-						</div>
-
-						<div class="item">
-							<img src="images/gallery/4.jpg" alt="">
-							<a href="images/gallery/4.jpg" rel="prettyPhoto[screenshots]"><span class="overlay"></span></a>
-						</div>
-
-						<div class="item">
-							<img src="images/gallery/5.jpg" alt="">
-							<a href="images/gallery/5.jpg" rel="prettyPhoto[screenshots]"><span class="overlay"></span></a>
-						</div>
-
-						<div class="item">
-							<img src="images/gallery/6.jpg" alt="">
-							<a href="images/gallery/6.jpg" rel="prettyPhoto[screenshots]"><span class="overlay"></span></a>
-						</div>
-
-						<div class="item">
-							<img src="images/gallery/7.jpg" alt="">
-							<a href="images/gallery/7.jpg" rel="prettyPhoto[screenshots]"><span class="overlay"></span></a>
-						</div>
-
-						<div class="item">
-							<img src="images/gallery/8.jpg" alt="">
-							<a href="images/gallery/8.jpg" rel="prettyPhoto[screenshots]"><span class="overlay"></span></a>
-						</div>
-
-						<div class="item">
-							<img src="images/gallery/1.jpg" alt="">
-							<a href="images/gallery/1.jpg" rel="prettyPhoto[screenshots]"><span class="overlay"></span></a>
-						</div>
-
-						<div class="item">
-							<img src="images/gallery/2.jpg" alt="">
-							<a href="images/gallery/2.jpg" rel="prettyPhoto[screenshots]"><span class="overlay"></span></a>
-						</div>
-
-						<div class="item">
-							<img src="images/gallery/3.jpg" alt="">
-							<a href="images/gallery/3.jpg" rel="prettyPhoto[screenshots]"><span class="overlay"></span></a>
-						</div>
-
-						<div class="item">
-							<img src="images/gallery/4.jpg" alt="">
-							<a href="images/gallery/4.jpg" rel="prettyPhoto[screenshots]"><span class="overlay"></span></a>
-						</div> 
-					</div><!--/owl-wrap-->
-				</div><!--/col-sm-12-->
-				
-			</div><!--/row-->
-		</div><!--/container-->
-	</div><!--/gallary-->
-
-	<!--faq-->
-	<div class="wrapper faq-wrap" id="FAQ">
-		<div class="container">
-			<div class="row">
-				<div data-uk-scrollspy="{cls:'slideRight', repeat: true}" class="col-md-6 faq-image"><img  src="images/ipad-hand.png" alt=""></div>
-				<div class="col-md-6" data-uk-scrollspy="{cls:'slideLeft', repeat: true}">
-
-					<div class="faq-intro"><h2>Some <span>questions</span> in mind?</h2></div>
-					<div class="panel-group" id="faq">
-					  <div class="panel panel-faq">
-					    <div class="panel-heading">
-					      <h4 class="panel-title">
-					        <a data-toggle="collapse" data-parent="#faq" href="#collapseOne">
-					          <i class="fa fa-plus-square fa-minus-square fa-fw"></i>Collapsible Group Item?
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseOne" class="panel-collapse collapse in">
-					      <div class="panel-body">
-					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-					      </div>
-					    </div>
-					  </div><!--/panel panel-faq-->
-					  <div class="panel panel-faq">
-					    <div class="panel-heading">
-					      <h4 class="panel-title">
-					        <a data-toggle="collapse" data-parent="#faq" href="#collapseTwo">
-					          <i class="fa fa-plus-square fa-fw"></i>Anim pariatur cliche reprehenderit?
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseTwo" class="panel-collapse collapse">
-					      <div class="panel-body">
-					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-					      </div>
-					    </div>
-					  </div><!--/panel panel-faq-->
-					  <div class="panel panel-faq">
-					    <div class="panel-heading">
-					      <h4 class="panel-title">
-					        <a data-toggle="collapse" data-parent="#faq" href="#collapseThree">
-					          <i class="fa fa-plus-square fa-fw"></i>Eiusmod accusamus high life accusamus?
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseThree" class="panel-collapse collapse">
-					      <div class="panel-body">
-					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-					      </div>
-					    </div>
-					  </div><!--/panel panel-faq-->
-					  <div class="panel panel-faq">
-					    <div class="panel-heading">
-					      <h4 class="panel-title">
-					        <a data-toggle="collapse" data-parent="#faq" href="#collapseFour">
-					          <i class="fa fa-plus-square fa-fw"></i>High life accusamus terry richardson?
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseFour" class="panel-collapse collapse">
-					      <div class="panel-body">
-					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-					      </div>
-					    </div>
-					  </div><!--/panel panel-faq-->
-					</div><!--/faq-->
-
-				</div><!--/col-sm-6-->
-
-			</div><!--/row-->
-		</div><!--/container-->
-	</div><!--/faq-->
-
-	<!--testimonials-wrap-->
-	<div class="wrapper testimonials-wrap" id="news-Letter">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="testimonials-intro" data-uk-scrollspy="{cls:'slideLeft', repeat: true}">
-						<h2>OUR <span>HAPPY</span> USERS</h2>
-					</div><!--/testimonials-intro-->
+    </div><!-- /.container -->
+</nav>
+<!-- /Fixed Top Navigation -->
 
 
-					<div id="testimonials" class="owl-carousel row">
-					  
-					  	<div class="item col-sm-12">
-						  	<img src="images/clients/1.jpg" class="client-img pull-left" alt="">
-						  	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						  	quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-						  	<p>-Jhon Doe</p>
-						 </div>
-						 <div class="item col-sm-12">
-						  	<img src="images/clients/2.jpg" class="client-img pull-left" alt="">
-						  	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						  	quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-						  	<p>-Jane Doe</p>
-						 </div>
+<!-- Header -->
+    <header id="header" class="site-header header-fullscreen wrapper-table">
+        <div style="background-image: url(assets/images/heading1.jpg);" class="overlay-01 parallax-hero bg" data-top="transform: translate3d(0px, 0px, 0px)" data-top-bottom="transform: translate3d(0px, -200px, 0px)" data-anchor-target="#site-header"></div>
 
-						 <div class="item col-sm-12">
-						  	<img src="images/clients/3.jpg" class="client-img pull-left" alt="">
-						  	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						  	quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-						  	<p>-Jhon Doe</p>
-						 </div>
-						 <div class="item col-sm-12">
-						  	<img src="images/clients/4.jpg" class="client-img pull-left" alt="">
-						  	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						  	quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-						  	<p>-Jane Doe</p>
-						 </div>
-						 <div class="item col-sm-12">
-						  	<img src="images/clients/1.jpg" class="client-img pull-left" alt="">
-						  	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						  	quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-						  	<p>-Jhon Doe</p>
-						 </div>
-						 <div class="item col-sm-12">
-						  	<img src="images/clients/2.jpg" class="client-img pull-left" alt="">
-						  	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						  	quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-						  	<p>-Jane Doe</p>
-						 </div>
+        <div class="valign-center">
+            <div class="container">
 
-						 <div class="item col-sm-12">
-						  	<img src="images/clients/3.jpg" class="client-img pull-left" alt="">
-						  	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						  	quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-						  	<p>-Jhon Doe</p>
-						 </div>
-						 <div class="item col-sm-12">
-						  	<img src="images/clients/4.jpg" class="client-img pull-left" alt="">
-						  	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						  	quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-						  	<p>-Jane Doe</p>
-						 </div>
-					  
+                <div class="intro text-center">
+                    <img src="assets/images/title.png" class="center-block">
+                    <h1>
+                        real charcoal bbq
+                        <br>
+                        authentic taste
+                    </h1>
+                    <p> call: +44 000 444 11 </p>
+                    <a href="#services" class="btn"> 
+                        discover now 
+                    </a>
+                </div><!-- /.intro -->
 
-					</div><!--/testimonials-->
-					
-
-				</div>
-			</div><!--/row-->
-		</div><!--/container-->
-	</div><!--/testimonials-wrap-->
-
-	<!--news-letter-->
-	<div class="wrapper news-letter">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 news-letter-intro" data-uk-scrollspy="{cls:'slideLeft', repeat: true}">
-					<div class="row">
-						<div class="col-sm-3 news-letter-icon"><i class="fa fa-envelope-o"></i></div>
-						<div class="col-sm-9">
-							<h2>Signup to get the latest news</h2>
-							<p>We won't share your credentials to anyone.</p>
-						</div>
-					</div><!--/row-->
-				</div><!--/news-letter-intro-->
-				<div class="col-sm-6">
-					
-					<form class="subscribe-form form-inline" role="form" data-uk-scrollspy="{cls:'slideRight', repeat: true}" id="subscription-form">
-
-	                    <div class="input-group">
-	                        <input name="email" type="email" id="subscriber-email" class="form-control" placeholder="Enter your email address" required>
-                            <span class="input-group-btn">
-                                <input id="subscribe-button" type="submit" class="btn btn-color" value="SUBSCRIBE">
-                            </span>
-	                    </div><!--/input-grpup-->
-
-	                </form>
-
-	                <!-- SUCCESS OR ERROR MESSAGES -->
-	                <div id="subscription-response"></div>
-
-	                <p class="spam-text">* We will never spam you</p>
-				</div>
-			</div><!--/row-->
-		</div><!--/container-->
-	</div><!--/wrapper news-letter-->
-
-	<!--footer-->
-	<div class="wrapper footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 copyright">Copyright &copy; 2014 Your Company | Theme by <a href="http://www.technext.it">TechNext</a></div>
-				<div class="col-sm-6 social">
-					<a href="#">
-						<span class="fa-stack fa-lg">
-						  <i class="fa fa-circle fa-stack-2x rss"></i>
-						  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-						</span>
-					</a>
-
-					<a href="#">
-						<span class="fa-stack fa-lg">
-						  <i class="fa fa-circle fa-stack-2x fb"></i>
-						  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-						</span>
-					</a>
-
-					<a href="#">
-						<span class="fa-stack fa-lg">
-						  <i class="fa fa-circle fa-stack-2x twitter"></i>
-						  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-						</span>
-					</a>
-
-					<a href="#">
-						<span class="fa-stack fa-lg">
-						  <i class="fa fa-circle fa-stack-2x google-plus"></i>
-						  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-						</span>
-					</a>
-
-					<a href="#">
-						<span class="fa-stack fa-lg">
-						  <i class="fa fa-circle fa-stack-2x pinterest"></i>
-						  <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
-						</span>
-					</a>
-
-					<a href="#">
-						<span class="fa-stack fa-lg">
-						  <i class="fa fa-circle fa-stack-2x email"></i>
-						  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-						</span>
-					</a>
-				</div>
-			</div><!--/row-->
-		</div><!--/container-->
-	</div><!--/footer-->
+            </div><!-- /.container -->
+        </div><!-- /.header-wrapper-inner -->
+    </header>
+<!-- /Header -->
 
 
-	<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
-	<script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
+ <!-- start: about section -->
+    <section id="about" class="about">
+        <div class="container-fluid">
+            <div class="row equal_height">
+                <div class="col-md-7 p-l-0 p-r-0 text-center">
+                    <div class="section-bg section_1 m-r-10">
+                        <div class="section-content">
+                            <div class="valign-center">
+                                <div class="content-heading">
+                                    <p> _ est 1971 _ </p>
+                                    <h3>
+                                        This is not a just a piece of meat<br>This is a piece of a Heaven
+                                    </h3>
+                                </div>
+                                <div class="content-details">
+                                    <p>
+                                        Elan en no mies tupa pois ja. Ruostuneen tuhattakin kaljamalla ela eli nae kai. Ai saat tule ne mika ihan elan. Jatkaessa et ajattelin no ai rik kabi bazaar ta ver kkonne teistakin. Pitkana hanella vanhaan en insecx no totinen. Onko eli isa toi tuon jota vaan sen. Ilmestys nyt toivoisi toi vaylalta vedappas kahdella tarvitsi jos.
+                                    </p>
 
-        <!-- smooth-scroll -->
+                                    <img class="img-responsive center-block" src="assets/images/signature.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /.section-content -->
+                </div>
+                <div class="col-md-5 p-l-0 p-r-0 section_2">
+                    <img class="img-responsive about-featured" src="assets/images/about_1.jpg">
+                </div>
+            </div>
+        </div>
+    </section> <!-- /#about -->
 
-        <script>
-        $(function() {  
-            jQuery.scrollSpeed(100, 1000);
-        });
-        </script>
+<!-- end: about section -->
 
-	
+
+<!-- start: menu-header section -->
+    <section id="menu-header" class="menu-header">
+        <div class="wrapper">
+            <div class="wrapper-inner">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 p-l-0 p-r-0">
+                            <h2 class=" text-center text-uppercase">
+                                discover our
+                            </h2>
+                            <span> Menu </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- /#menu-header -->
+<!-- end: menu-header section -->
+
+
+    <!--  start: menu section -->
+    <section class="menu">
+        <div class="container-fluid">
+            <div class="row equal_height">
+                <div class="col-md-5 p-l-0 p-r-0 section_1">
+<div id="foodSlide" class="owl-carousel owl-theme">
+    <div class="item">
+        <img src="assets/images/food1.jpg" class="img-responsive" alt="Food Image">
+    </div>
+
+    <div class="item">
+        <img src="assets/images/food2.jpg" class="img-responsive" alt="Food Image">
+    </div>
+
+    <div class="item">
+        <img src="assets/images/food3.jpg" class="img-responsive" alt="Food Image">
+    </div>
+</div>
+                </div>
+
+                <div class="col-md-7 p-l-0 p-r-0 text-center">
+                    <div class="section-bg section_2 text-center m-l-10">
+                        <div class="section-content">
+                            <div class="valign-center">
+<div class="content-details">
+    <h3 class="menu-title">The Main Act</h3>
+    <p class="menu-subtitle">
+        smoked low and slow over hickory &amp; served with bbq beans, slaw and house pickles add pulled pork or hot links for   &#163;4
+    </p>
+    <div class="menu-details">
+        <li>
+            <div class="dotted-bg"></div>    
+            <label>Memphy Meaty Ribs &amp; tips</label>
+            <span>$14.00</span>
+        </li>
+        <li>
+            <div class="dotted-bg"></div>    
+            <label>Pulled Pork</label>
+            <span>$12.00</span>
+        </li>
+        <li>
+            <div class="dotted-bg"></div>    
+            <label>Half BBQ Chicken</label>
+            <span>$12.00</span>
+        </li>
+    </div>
+    <h3 class="menu-title">Salads</h3>
+    <div class="menu-details">
+        <li>
+            <div class="dotted-bg"></div>    
+            <label>Iceberg Rench Wedge</label>
+            <span>$14.00</span>
+        </li>
+        <li>
+            <div class="dotted-bg"></div>    
+            <label>House Salad</label>
+            <span>$12.00</span>
+        </li>
+    </div>
+    <a href='menu.html' class='btn btn-bottom-line'>view full menu</a>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- start: time section -->
+    <section id="time" class="time">
+        <div class="wrapper">
+            <div class="wrapper-inner">
+                <div class="container-fluid">
+                    <div class="time-ctg text-center">
+                        <div class="time-ctg-1">
+                            <h3>mon-fri</h3>
+                            <p>8:00 am - 10:00 pm</p>
+                        </div>
+                        <span>&amp;</span>
+                        <div class="time-ctg-2">
+                            <h3>sat-sun</h3> 
+                            <p>8:00 am - 11:00 pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- /#time -->
+<!-- end: time section -->
+
+
+ <!-- start: reservation section -->
+    <section id="reservation" class="reservation">
+        <div class="container-fluid">
+            <div class="row equal_height">
+                <div class="col-md-7 p-l-0 p-r-0 text-center">
+                    <div class="section-bg section_1 m-r-10">
+                        <div class="section-content">
+                            <div class="valign-center">
+                                <div class="content-heading">
+                                    <h3 class="title">
+                                        make a
+                                    </h3>
+                                    <span class="subtitle">
+                                        Reservation
+                                    </span>
+                                </div>
+                                <div class="content-details">
+                                    <p>
+                                        Donec non cursus sapien, vel aliquet dui cum sociis natoque penatibus et magnis  dis parturient montes nascetur ridiculus muslorem.
+                                    </p>
+
+
+                                    <!-- reservation form -->
+                                    <form action="php/reservation.php" method="post" id="reservationForm" class="reservation-form">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="ion-ios-calendar-outline"></i>
+                                                        </div>
+                                                        <input type="date" id="date" name="date" class="form-control" placeholder="dd/mm/yyyy" required="required">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon"><i class="ion-android-time"></i></div>
+                                                        <select name="time" type="text" class="form-control" id="time" required="required">
+                                                            <option>1:30 pm</option>
+                                                            <option>3:00 pm</option>
+                                                            <option>4:30 pm</option>
+                                                            <option>6:00 pm</option>
+                                                            <option>7:30 pm</option>
+                                                        </select>
+                                                    </div>  
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon"><i class="ion-person-stalker"></i></div>
+                                                        <input class="form-control" id="people" type="number" name="people" min="1" max="50" step="1" placeholder="Number of people" required="required">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <input class="form-control" id="email" name="email" placeholder="Email Address" type="email" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-md-offset-3">
+                                                <input type="submit" id="rfsubmit" name="submit" class="btn btn-bottom-line btn-reservation" value="find a table">
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div id="reservationFormResponse"></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 section_2 p-l-5">
+                    <div class="row">
+                        <div class="col-xs-6 p-l-0 p-r-0">
+                            <div class="image-gallery">
+                                <img class="img-responsive" src="assets/images/gallery1.jpg">
+                                <div class="view-more">
+                                    <a class="btn btn-bottom-line" href="gallery.html">
+                                        VIEW MORE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 p-l-0 p-r-0">
+                            <div class="image-gallery">
+                                <img class="img-responsive" src="assets/images/gallery2.jpg">
+                                <div class="view-more">
+                                    <a class="btn btn-bottom-line" href="gallery.html">
+                                        VIEW MORE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 p-l-0 p-r-0">
+                            <div class="image-gallery">
+                                <img class="img-responsive" src="assets/images/gallery3.jpg">
+                                <div class="view-more hovered">
+                                    <a class="btn btn-bottom-line" href="gallery.html">
+                                        VIEW MORE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 p-l-0 p-r-0">
+                            <div class="image-gallery">
+                                <img class="img-responsive" src="assets/images/gallery4.jpg">
+                                <div class="view-more">
+                                    <a class="btn btn-bottom-line" href="gallery.html">
+                                        VIEW MORE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- /#reservation -->
+<!-- end: reservation section -->
+
+
+<section id="g-map" class="g-map">
+    <div class="container-fluid">
+        <div class="google-map">
+            <div class="row">
+                <div class="col-md-12 p-l-0 p-r-0">
+                    <div id="map-canvas"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!-- /#contact -->
+
+
+<section class="section">
+	<div class="container">
+        <div class="contact-social">
+            <div class="row">
+                <div class="col-md-6 share-buttons">
+                    <ul class="social-icons">
+                        <li><p>Follow Us</p></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 link">
+                    <a href="giftcard.html">Send Gift Card</a>
+                    <a href="contact.html">Contact with us</a>
+                </div>
+            </div>                                
+        </div>
+
+        <div class="contact-info">
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <p>18 Chalk Farm Road, Camden NW1 8AG</p>
+                    <p>shout@thebistro.co.uk</p>
+                    <p>0207 428 0998</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- start: footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <p class="text-center"> &copy; 2016 The Bistro. All Rights Reserved. </p> 
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- end: footer -->
+
+
+
+
+</div><!--/main container-->
+
+
+
+
+<!-- Javascripts  -->
+
+<script src="assets/lib/components-modernizr/modernizr.js"></script>
+<script src="assets/lib/jquery/dist/jquery.js"></script>
+<script src="assets/lib/bootstrap/dist/js/bootstrap.js"></script>
+<script src="assets/lib/bootstrap/dist/js/bootstrap.js"></script>
+<script src="assets/lib/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+
+
+
+
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+
+
 </body>
 </html>
