@@ -259,7 +259,7 @@ link = '';     }
         <div class="collapse navbar-collapse" id="main-nav-collapse">
             <ul class="nav navbar-nav navbar-right" role="menu">
 
-                <li class="active">
+                <li class="">
                     <a href="index.html"><span>Home</span></a>
                 </li>
 
@@ -267,7 +267,7 @@ link = '';     }
                     <a href="guitars.html"><span>Guitars</span></a>
                 </li>
 
-                <li class="">
+                <li class="active">
                     <a href="accessories.html"><span>Accessories</span></a>
                 </li>
 
@@ -445,7 +445,16 @@ link = '';     }
 
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/main.js"></script>
-
+<script>
+  $(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 800) {
+      $('.the-logo').fadeIn();
+    } else {
+      $('.the-logo').fadeOut();
+    }
+  });
+</script>
 
 </body>
 </html>

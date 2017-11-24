@@ -259,11 +259,11 @@ link = '';     }
         <div class="collapse navbar-collapse" id="main-nav-collapse">
             <ul class="nav navbar-nav navbar-right" role="menu">
 
-                <li class="active">
+                <li class="">
                     <a href="index.html"><span>Home</span></a>
                 </li>
 
-                <li class="">
+                <li class="active">
                     <a href="guitars.html"><span>Guitars</span></a>
                 </li>
 
@@ -709,7 +709,16 @@ link = '';     }
 <script src="assets/lib/bootstrap/dist/js/bootstrap.js"></script>
 <script src="assets/lib/bootstrap/dist/js/bootstrap.js"></script>
 <script src="assets/lib/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
-
+<script>
+  $(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 800) {
+      $('.the-logo').fadeIn();
+    } else {
+      $('.the-logo').fadeOut();
+    }
+  });
+</script>
 
 
 
