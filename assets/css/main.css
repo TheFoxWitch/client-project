@@ -1,6 +1,7 @@
 /*===================================
     Table of content
 ====================================*/
+
 #loader-wrapper {
   position: fixed;
   top: 0;
@@ -122,6 +123,7 @@
 }
 
 /* Loaded */
+
 .loaded #loader-wrapper .loader-section.section-left {
   -webkit-transform: translateX(-100%);
   /* Chrome, Opera 15+, Safari 3.1+ */
@@ -163,6 +165,7 @@
 }
 
 /* JavaScript Turned Off */
+
 .no-js #loader-wrapper {
   display: none;
 }
@@ -170,9 +173,11 @@
 /*--------------------------------------------------------------------
 						Typography
 -------------------------------------------------------------------*/
+
 /*@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
 @import url(https://fonts.googleapis.com/css?family=Cabin:400,500,600,700);
 @import url(https://fonts.googleapis.com/css?family=Great+Vibes);*/
+
 a:hover {
   text-decoration: none;
 }
@@ -202,6 +207,7 @@ p {
 /*===================================================
 				Common
 =====================================================*/
+
 body {
   background-color: #ffffff;
 }
@@ -302,21 +308,24 @@ ul li {
 }
 
 /*====================   preloader  ====================*/
-/*#preloader { 
-	position: fixed; 
-	left: 0; 
-	top: 0; 
-	z-index: 999; 
-	width: 100%; 
-	height: 100%; 
-	overflow: visible; 
+
+/*#preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
 	background: #333 url('../images/loading.gif');
 	background-repeat: no-repeat;
-	background-position: center; 
+	background-position: center;
 }*/
+
 /*----------------------------------------------------------------------
 						button
 ---------------------------------------------------------------------*/
+
 .btn {
   background-color: #daa555;
   border-radius: 20px;
@@ -344,6 +353,7 @@ ul li {
 /*------------------------------------------------------------------
 							Form
 ---------------------------------------------------------------------*/
+
 .form-group {
   margin-bottom: 20px;
 }
@@ -408,8 +418,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   letter-spacing: 2px;
 }
 
-.main-navigation .navbar-brand a:focus,
-.main-navigation .navbar-brand a:hover {
+.main-navigation .navbar-brand a:focus, .main-navigation .navbar-brand a:hover {
   text-decoration: none;
 }
 
@@ -479,12 +488,12 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   padding: 20px 15px 5px 15px;
 }
 
-.navbar-solid .navbar-nav > li > a {
+.navbar-solid .navbar-nav>li>a {
   padding: 20px 10px;
 }
 
 @media only screen and (max-width: 992px) {
-  .main-navigation .navbar-nav > li > a {
+  .main-navigation .navbar-nav>li>a {
     padding: 20px 10px 15px;
     letter-spacing: 1px;
     text-align: center;
@@ -504,11 +513,12 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 /* ------------  nav tab ------------ */
+
 .nav-tabs {
   margin-right: 2px;
 }
 
-.nav-tabs > li > a {
+.nav-tabs>li>a {
   border-radius: 0px;
   color: #969595;
   margin: 0px;
@@ -523,9 +533,11 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 /*------------------------------  header -----------------------------------*/
+
 /* -------------------------------------------------
 				Common
  ------------------------------------------------- */
+
 .header-fullscreen {
   position: relative;
   width: 100%;
@@ -541,6 +553,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 /* --------------------------------------------------
 				Background
 --------------------------------------------------- */
+
 .bg {
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -557,6 +570,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 /* ------------------------------------------------------
                     Overlay
 -------------------------------------------------------- */
+
 .overlay-01 {
   position: relative;
 }
@@ -577,6 +591,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 /* -----------------------------------------------------
 					parallax
 ------------------------------------------------------- */
+
 .parallax-hero {
   position: absolute;
   top: 0;
@@ -592,7 +607,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   width: 100%;
 }
 
-.wrapper-table > .valign-center {
+.wrapper-table>.valign-center {
   display: table-cell;
   vertical-align: middle;
 }
@@ -600,6 +615,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 /*--------------------------------------------------------
 				Header
  ------------------------------------------------------ */
+
 .site-header {
   position: relative;
   overflow: hidden;
@@ -646,6 +662,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 /*------------------------------   inner header  ------------------------------*/
+
 .inner-header {
   padding: 150px 0 100px 0;
 }
@@ -666,6 +683,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 /*------------------------------------------------------------
 							Menu-Header
 ----------------------------------------------------------------*/
+
 .menu-header .wrapper {
   background: url(../images/gallery.jpg) no-repeat center center;
   background-attachment: fixed;
@@ -687,6 +705,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 /*-------------------------------------------------------------------
 							Time
 --------------------------------------------------------------------*/
+
 .time .wrapper {
   background: url(../images/hours.jpg) no-repeat center center;
   background-attachment: fixed;
@@ -765,6 +784,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 /*------------------------------------------------------------
 							About Section
 -------------------------------------------------------------*/
+
 .about .content-heading h3 {
   font-style: italic;
   font-weight: 400;
@@ -796,6 +816,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 /*-----------------------------------------------------------------
 					Food Menu
 -------------------------------------------------------------------*/
+
 .menu .content-details {
   padding: 30px 100px;
 }
@@ -891,6 +912,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 /*```````````  Owl Carousel Customization  ````````````*/
+
 #foodSlide.owl-theme .owl-controls .owl-buttons div {
   background-color: transparent;
   position: absolute;
@@ -923,6 +945,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 /*-----------------------------------------------------------------
 						Reservation
 -------------------------------------------------------------------*/
+
 .reservation .image-gallery {
   position: relative;
 }
@@ -991,6 +1014,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 /*-------------------------------------------------------------------
 							Contact
 --------------------------------------------------------------------*/
+
 .content-heading span.subtitle {
   color: #daa555;
   font-family: 'Great Vibes', cursive;
@@ -1066,6 +1090,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 /*======================  contact page ============================== */
+
 .contact .form-content {
   display: table;
   width: 100%;
@@ -1204,12 +1229,12 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   }
 }
 
-.panel-group .panel + .panel {
+.panel-group .panel+.panel {
   border-top: 1px solid #daa555;
   margin-top: 0px;
 }
 
-.panel-default > .panel-heading + .panel-collapse > .panel-body {
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
   border-top-color: #daa555;
 }
 
@@ -1338,6 +1363,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 /*```````````  Owl Carousel Customization  ````````````*/
+
 #availableGiftcard.owl-theme .owl-controls .owl-buttons div {
   background-color: transparent;
   position: absolute;
@@ -1413,9 +1439,18 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   }
 }
 
+@media (min-width: 768px) {
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-top: 28px;
+    line-height: 25px;
+    width: 160px;
+  }
+}
+
 /*-----------------------------------------------------------------------
 							footer
 --------------------------------------------------------------------------*/
+
 footer {
   background-color: #000000;
   color: #999999;
