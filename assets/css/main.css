@@ -1447,6 +1447,10 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   }
 }
 
+.the-logo {
+  display: none;
+}
+
 /*-----------------------------------------------------------------------
 							footer
 --------------------------------------------------------------------------*/
