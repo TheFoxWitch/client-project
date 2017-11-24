@@ -183,14 +183,14 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bitter', serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   margin: 0px;
 }
 
 p {
   color: #858585;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -331,7 +331,7 @@ ul li {
   border-radius: 20px;
   color: #ffffff;
   padding: 5px 20px;
-  font-family: 'Bitter', serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 1px;
@@ -404,7 +404,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .main-navigation .navbar-brand {
-  font-family: 'Bitter', serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   padding: 40px 15px 10px 15px;
   -webkit-transition: all 0.4s ease;
@@ -481,7 +481,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .navbar-solid {
-  background-color: #515151;
+  background-color: #231f1f;
 }
 
 .navbar-solid .navbar-brand {
@@ -647,7 +647,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 
 .site-header .intro p {
   color: #ffffff;
-  font-family: 'Bitter', serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 30px 0px 10px;
   text-transform: uppercase;
 }
@@ -674,7 +674,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 
 .inner-header span {
   color: #daa555;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Open Sans', sans-serif;
   font-size: 72px;
   line-height: 72px;
   margin-left: -20px;
@@ -759,13 +759,13 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 
 .time .wrapper .wrapper-inner p {
   color: #eee7dd;
-  font-family: 'Bitter', serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
 }
 
 .time .wrapper .wrapper-inner span {
-  font-family: 'Cabi', serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 85px;
   line-height: 55px;
   float: left;
@@ -1017,7 +1017,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 
 .content-heading span.subtitle {
   color: #daa555;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Open Sans', sans-serif;
   font-size: 72px;
   line-height: 60px;
 }
@@ -1074,7 +1074,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 .contact-social a, .contact-social p {
   color: #daa555;
   font-size: 15px;
-  font-family: 'Bitter', serif;
+  font-family: 'Slabo 27px', serif;
   letter-spacing: 1px;
 }
 
@@ -1085,7 +1085,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .contact-info p {
-  font-family: 'Bitter', serif;
+  font-family: 'Slabo 27px', serif;
   letter-spacing: 1px;
 }
 
@@ -1441,7 +1441,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 
 @media (min-width: 768px) {
   .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-top: 28px;
+    margin-top: -29px;
     line-height: 25px;
     width: 160px;
   }
