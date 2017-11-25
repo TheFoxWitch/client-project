@@ -1448,6 +1448,11 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   display: none;
 }
 
+.sundays {
+  position: relative;
+  bottom: -1em;
+}
+
 /*-----------------------------------------------------------------------
 							footer
 --------------------------------------------------------------------------*/
