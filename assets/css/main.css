@@ -1453,6 +1453,10 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   bottom: -1em;
 }
 
+.time {
+  height: 40px;
+}
+
 /*-----------------------------------------------------------------------
 							footer
 --------------------------------------------------------------------------*/
