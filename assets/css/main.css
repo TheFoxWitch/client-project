@@ -682,7 +682,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 ----------------------------------------------------------------*/
 
 .menu-header .wrapper {
-  background: url(../images/gallery.jpg) no-repeat center center;
+  background: url(../images/bgn-guitarplayer.png) no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
@@ -704,7 +704,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 --------------------------------------------------------------------*/
 
 .time .wrapper {
-  background: url(../images/hours.jpg) no-repeat center center;
+  background: url(../images/bgn-guitar-gibson.png) no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
