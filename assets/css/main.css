@@ -849,14 +849,14 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   text-align: left;
 }
 
-.menu .menu-details li label::after {
+/*.menu .menu-details li label::after {
   position: absolute;
   width: 35%;
   content: "";
   border-top: 1px dotted #c3c3c3;
   right: 18%;
   top: 40%;
-}
+}*/
 
 @media only screen and (max-width: 767px) {
   .menu .menu-details li label::after {
@@ -875,7 +875,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 .menu .menu-details li.special {
   border: 1px solid #DAA555;
   padding-top: 15px;
-  padding-bottom: 0px;
+  padding-bottom: 15px;
 }
 
 .menu .menu-details li.special label::after {
