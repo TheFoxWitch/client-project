@@ -360,6 +360,7 @@ ul li {
 
 .form-group .input-group {
   width: 100%;
+  height: 39px;
 }
 
 .form-control {
@@ -1567,6 +1568,10 @@ p {
       display: none;
     }
   }
+}
+
+select[time] {
+  height: 39px;
 }
 
 /*-----------------------------------------------------------------------
