@@ -717,7 +717,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 
 .time .wrapper .wrapper-inner {
   background-color: rgba(0, 0, 0, 0.45);
-  color: #eee7dd;
+  color: #daa456;
   padding: 200px 0px;
   text-transform: uppercase;
 }
@@ -876,6 +876,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   border: 1px solid #DAA555;
   padding-top: 15px;
   padding-bottom: 15px;
+  height: 71px;
 }
 
 .menu .menu-details li.special label::after {
@@ -884,7 +885,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 
 .menu .menu-details li.special .special-text {
   background-color: #DAA555;
-  margin-bottom: 0px;
+  margin-bottom: -15px;
   margin-top: 30px;
 }
 
@@ -1574,6 +1575,10 @@ p {
 
 select#time.form-control.time {
   height: 40px;
+}
+
+.guitars-list {
+  margin-top: 90px;
 }
 
 /*-----------------------------------------------------------------------
