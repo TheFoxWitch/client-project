@@ -509,7 +509,9 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
     background-color: rgba(0, 0, 0, 0.9);
   }
   .main-navigation .navbar-brand {
-    padding-top: 20px;
+    position: relative;
+    width: 140px;
+    top: -15px;
   }
 }
 
