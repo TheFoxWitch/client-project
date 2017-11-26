@@ -843,7 +843,6 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   float: left;
   padding-left: 10px;
   padding-right: 10px;
-  max-width: 50%;
   text-align: left;
 }
 
