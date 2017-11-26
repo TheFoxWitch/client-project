@@ -811,11 +811,11 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 /*-----------------------------------------------------------------
-					Food Menu
+					Guitar Menu
 -------------------------------------------------------------------*/
 
 .menu .content-details {
-  padding: 30px 100px;
+  /*padding: 30px 100px;*/
 }
 
 .menu .menu-title {
@@ -1480,7 +1480,6 @@ h1 {
 }
 
 p {
-  margin-top: 200px;
   a {
     text-transform: uppercase;
     text-decoration: none;
