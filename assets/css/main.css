@@ -286,7 +286,7 @@ ul li {
 }
 
 .wrapper-inner span {
-  color: #FFF;
+  color: #daa555;
   font-family: 'Great Vibes', cursive;
   font-size: 72px;
   line-height: 105px;
@@ -668,8 +668,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .inner-header h2 {
-  /*color: white;*/
-  color: #daa456;
+  color: white;
   margin-top: 5px;
 }
 
@@ -698,7 +697,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .menu-header .wrapper .wrapper-inner h2 {
-  color: #daa555;
+  color: white;
   font-size: 54px;
   position: relative;
 }
