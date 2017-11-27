@@ -74,4 +74,3 @@
 	$result .= '</div>';
 
 	echo $result;
-	?>
