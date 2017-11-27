@@ -1594,6 +1594,13 @@ select#time.form-control.time {
   margin-bottom: 40px;
 }
 
+.guitar-title-text {
+  position: relative;
+  bottom: -20px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
 accessories-image {
   position: relative;
   bottom: -40px;
