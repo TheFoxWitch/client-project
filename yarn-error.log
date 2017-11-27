@@ -14,7 +14,22 @@ Platform:
   darwin x64
 
 npm manifest: 
-  No manifest
+  {
+    "name": "Leftys guitars",
+    "version": "1.0.0",
+    "description": "a guitar shop website",
+    "engines": {
+      "node": "9.2.0"
+    },
+    "main": "index.js",
+    "scripts": {
+      "lint": "eslint src",
+      "dev": "nodemon --exec 'babel-node src/index'",
+      "test": "npm run lint",
+      "start": "nf start",
+      "build": ""
+    }
+  }
 
 yarn manifest: 
   No manifest
@@ -23,9 +38,10 @@ Lockfile:
   No lockfile
 
 Trace: 
-  Error: Couldn't find a package.json file in "/Users/TRASH/Desktop/ACA-WebDesign-INT/Lefty's Guitars/Client Project"
+  Error: package.json: Name contains illegal characters
       at new MessageError (/Users/TRASH/.yarn/lib/cli.js:186:110)
-      at /Users/TRASH/.yarn/lib/cli.js:56277:15
+      at module.exports.exports.default (/Users/TRASH/.yarn/lib/cli.js:36913:13)
+      at /Users/TRASH/.yarn/lib/cli.js:52046:51
       at Generator.next (<anonymous>)
       at step (/Users/TRASH/.yarn/lib/cli.js:92:30)
       at /Users/TRASH/.yarn/lib/cli.js:103:13

@@ -1,0 +1,16 @@
+{
+  "name": "Leftys-guitars",
+  "version": "1.0.0",
+  "description": "a-guitar-shop-website",
+  "engines": {
+    "node": "9.2.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "dev": "nodemon --exec 'babel-node src/index'",
+    "test": "npm run lint",
+    "start": "nf start",
+    "build": ""
+  }
+}
