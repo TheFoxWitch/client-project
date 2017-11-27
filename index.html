@@ -13,7 +13,7 @@
 
   <!-- favicons
     ============================================= -->
-
+  <link rel="preload" href="assests/favicon.ico">
   <meta name="theme-color" content="#ffffff">
 
 
@@ -51,7 +51,6 @@
 
   <!-- Custom Template Styles -->
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="icon" href="assests/favicon.ico">
 
   <!-- <script>
     google.maps.event.addDomListener(window, 'load', init);
@@ -298,7 +297,7 @@
       $styledSelect.text($(this).text()).removeClass('active');
       $this.val($(this).attr('rel'));
       $list.hide();
-      /* alert($this.val()); Uncomment this for demonstration! */
+      alert($this.val());
   });
 
   // Hides the unordered list when clicking outside of it
