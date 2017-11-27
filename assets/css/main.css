@@ -1588,7 +1588,14 @@ select#time.form-control.time {
 }
 
 .pedals-text {
+  position: relative;
+  bottom: -20px;
   color: #333;
+}
+
+accessories-image {
+  position: relative;
+  bottom: -40px;
 }
 
 /*-----------------------------------------------------------------------
