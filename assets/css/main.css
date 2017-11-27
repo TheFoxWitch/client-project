@@ -698,7 +698,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .menu-header .wrapper .wrapper-inner h2 {
-  color: #ffffff;
+  color: #daa555;
   font-size: 54px;
   position: relative;
 }
@@ -1579,6 +1579,10 @@ select#time.form-control.time {
 
 .guitars-list {
   margin-top: 90px;
+}
+
+.new-guitars {
+  margin-bottom: 20px;
 }
 
 /*-----------------------------------------------------------------------
