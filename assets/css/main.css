@@ -1059,7 +1059,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 
 .contact-social .link a {
   padding: 0px 20px;
-  border-left: 1px solid #daa555;
+  border-left: 1px solid #333;
 }
 
 .contact-social .link a:first-child {
@@ -1071,7 +1071,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .contact-social a, .contact-social p {
-  color: #daa555;
+  color: #333;
   font-size: 15px;
   font-family: 'Slabo 27px', serif;
   letter-spacing: 1px;
