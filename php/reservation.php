@@ -1,6 +1,6 @@
 
 <?php
-      
+
       $errors = array();
 
       // Check if date has been entered
@@ -12,7 +12,7 @@
       if (!isset($_POST['time'])) {
             $errors['time'] = 'Please select time of reservation';
       }
-      
+
       //Check if people has been entered
       if (!isset($_POST['people'])) {
             $errors['people'] = 'Please enter the number of people for reservation';
@@ -50,9 +50,9 @@
       $people = $_POST['people'];
       $email = $_POST['email'];
       $from = $email;
-      $to = 'info@themewagon.com';  // please change this email id
-      $subject = 'Table Booking : Bistro';
-      
+      $to = 'Xeromancer@gmail.com';  // please change this email id
+      $subject = 'Guitar Viewing : Lefty'/s'';
+
       $body = "From: E-Mail: $email\n Date: $date\n Time: $time\n Number of people: $people";
 
 
@@ -75,3 +75,4 @@
       $result .= '</div>';
 
       echo $result;
+?>
