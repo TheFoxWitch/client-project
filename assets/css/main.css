@@ -189,7 +189,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  color: #858585;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1589,7 +1588,7 @@ select#time.form-control.time {
 }
 
 .pedals-text {
-  color: #daa555;
+  color: #333;
 }
 
 /*-----------------------------------------------------------------------
