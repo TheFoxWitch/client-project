@@ -838,6 +838,8 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   overflow: hidden;
   padding: 5px 0px;
   position: relative;
+  text-align: left;
+  font-weight: 700;
 }
 
 .menu .menu-details li label {
