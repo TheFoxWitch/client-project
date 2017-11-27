@@ -1610,12 +1610,16 @@ accessories-image {
   padding-bottom: 70px
 }
 
+.guitar-text-bump {
+  margin-bottom: 115px;
+}
+
 /*-----------------------------------------------------------------------
 							footer
 --------------------------------------------------------------------------*/
 
 footer {
-  background-color: #000000;
+  background-color: #333;
   color: #999999;
   padding: 30px 0px;
   margin-top: 50px;
