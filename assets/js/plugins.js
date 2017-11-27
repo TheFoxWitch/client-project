@@ -111,7 +111,7 @@ window.Modernizr = function(a, b, c) {
         k.setAttribute("type", f = a[d]),
         e = k.type !== "text",
         e && (
-          k.value = l, k.style.cssText = "position:absolute;visibility:hidden;", /^range$/.test(f) && k.style.WebkitAppearance !== c
+          k.value = l, k.style.cssText = "position:relative;visibility:hidden;", /^range$/.test(f) && k.style.WebkitAppearance !== c
           ? (g.appendChild(k), h = b.defaultView, e = h.getComputedStyle && h.getComputedStyle(k, null).WebkitAppearance !== "textfield" && k.offsetHeight !== 0, g.removeChild(k))
           : /^(search|tel)$/.test(f) || (
             /^(url|email)$/.test(f)
@@ -180,19 +180,19 @@ window.Modernizr = function(a, b, c) {
         : (n.parentNode.removeChild(n), g.style.overflow = k),
       !!i
     },
-    // z = function(b) {
-    //   var c = a.matchMedia || a.msMatchMedia;
-    //   if (c)
-    //     return c(b).matches;
-    //   var d;
-    //   return y("@media " + b + " { #" + h + " { position: absolute; } }", function(b) {
-    //     d = (
-    //       a.getComputedStyle
-    //       ? getComputedStyle(b, null)
-    //       : b.currentStyle)["position"] == "absolute"
-    //   }),
-    //   d
-    // },
+     z = function(b) {
+       var c = a.matchMedia || a.msMatchMedia;
+       if (c)
+         return c(b).matches;
+       var d;
+       return y("@media " + b + " { #" + h + " { position: relative; } }", function(b) {
+         d = (
+           a.getComputedStyle
+           ? getComputedStyle(b, null)
+           : b.currentStyle)["position"] == "relative"
+       }),
+       d
+     },
     A = function() {
       function d(d, e) {
         e = e || b.createElement(a[d] || "div"),
@@ -258,7 +258,7 @@ window.Modernizr = function(a, b, c) {
     var c;
     return "ontouchstart" in a || a.DocumentTouch && b instanceof DocumentTouch
       ? c = !0
-      : y(["@media (", n.join("touch-enabled),("), h, ")", "{#modernizr{top:9px;position:absolute}}"].join(""), function(a) {
+      : y(["@media (", n.join("touch-enabled),("), h, ")", "{#modernizr{top:9px;position:relative}}"].join(""), function(a) {
         c = a.offsetTop === 9
       }),
     c
@@ -340,7 +340,7 @@ window.Modernizr = function(a, b, c) {
   },
   s.csstransforms3d = function() {
     var a = !!J("perspective");
-    return a && "webkitPerspective" in g.style && y("@media (transform-3d),(-webkit-transform-3d){#modernizr{left:9px;position:absolute;height:3px;}}", function(b, c) {
+    return a && "webkitPerspective" in g.style && y("@media (transform-3d),(-webkit-transform-3d){#modernizr{left:9px;position:relative;height:3px;}}", function(b, c) {
       a = b.offsetLeft === 9 && b.offsetHeight === 3
     }),
     a
