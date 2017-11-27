@@ -180,19 +180,19 @@ window.Modernizr = function(a, b, c) {
         : (n.parentNode.removeChild(n), g.style.overflow = k),
       !!i
     },
-    // z = function(b) {
-    //   var c = a.matchMedia || a.msMatchMedia;
-    //   if (c)
-    //     return c(b).matches;
-    //   var d;
-    //   return y("@media " + b + " { #" + h + " { position: absolute; } }", function(b) {
-    //     d = (
-    //       a.getComputedStyle
-    //       ? getComputedStyle(b, null)
-    //       : b.currentStyle)["position"] == "absolute"
-    //   }),
-    //   d
-    // },
+    z = function(b) {
+      var c = a.matchMedia || a.msMatchMedia;
+      if (c)
+        return c(b).matches;
+      var d;
+      return y("@media " + b + " { #" + h + " { position: absolute; } }", function(b) {
+        d = (
+          a.getComputedStyle
+          ? getComputedStyle(b, null)
+          : b.currentStyle)["position"] == "absolute"
+      }),
+      d
+    },
     A = function() {
       function d(d, e) {
         e = e || b.createElement(a[d] || "div"),
