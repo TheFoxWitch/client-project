@@ -49,7 +49,7 @@
 	$email = $_POST['email'];
 	$message = $_POST['message'];
 	$from = $email;
-	$to = 'Xeromancer@gmail.com';  // please change this email id
+	$to = 'hello@leftysguitars.net';  // please change this email id
 	$subject = 'Contact Form : Lefty's' Guitars';
 
 	$body = "From: $fname. ' '. $lname\n E-Mail: $email\n Message:\n $message";
