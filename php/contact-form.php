@@ -1,5 +1,5 @@
 <?php
-	
+
 	$errors = array();
 
 	// Check if first name has been entered
@@ -11,12 +11,12 @@
 	if (!isset($_POST['lname'])) {
 		$errors['lName'] = 'Please enter your last name';
 	}
-	
+
 	// Check if email has been entered and is valid
 	if (!isset($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 		$errors['email'] = 'Please enter a valid email address';
 	}
-	
+
 	//Check if message has been entered
 	if (!isset($_POST['message'])) {
 		$errors['message'] = 'Please enter your message';
@@ -49,9 +49,9 @@
 	$email = $_POST['email'];
 	$message = $_POST['message'];
 	$from = $email;
-	$to = 'info@themewagon.com';  // please change this email id
-	$subject = 'Contact Form : Bistro - Restaurant Website Template';
-	
+	$to = 'info@leftysguitars.net';  // please change this email id
+	$subject = 'Contact Form : Lefty`'s Guitars;
+
 	$body = "From: $fname. ' '. $lname\n E-Mail: $email\n Message:\n $message";
 
 
@@ -60,7 +60,7 @@
 	if (mail ($to, $subject, $body)) {
 		$result .= '<div class="alert alert-success alert-dismissible" role="alert">';
  		$result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-		$result .= 'Thank You! I will be in touch';
+		$result .= 'Thank You! We will be in touch';
 		$result .= '</div>';
 
 		echo $result;
@@ -74,4 +74,3 @@
 	$result .= '</div>';
 
 	echo $result;
-	
