@@ -1424,7 +1424,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   position: absolute;
   width: 40%;
   text-align: right;
-  background-color: #515151;
+  background-color: #231f1f;
   color: #fff;
   padding: 15px 30px;
   top: 60px;
