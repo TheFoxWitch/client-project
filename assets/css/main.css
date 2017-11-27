@@ -891,6 +891,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 
 .menu .menu-details li.special .special-text p {
   color: #ffffff;
+  text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
