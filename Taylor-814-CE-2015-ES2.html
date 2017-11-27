@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Phillip Meek" />
+    <meta name="Desion" content="lefty's guitars left handded guitars">
+    <meta name="keywords" content="lefty's guitars, left handded guitars, guitars, lefty's">
+
+    <title>Taylor 814 CE 2015 ES2 | Lefty's</title>
+
+    <!-- favicons
+    ============================================= -->
+
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- StyleSheets -->
+
+    <!-- Twitter Bootstrap -->
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css">
+
+
+    <!-- Library Stylesheets -->
+    <link rel="stylesheet" href="assets/lib/owlcarousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/lib/owlcarousel/owl-carousel/owl.theme.css">
+
+
+    <!-- Google font Stylesheets -->
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+    <!-- <link href='https://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px" rel="stylesheet">
+
+
+    <!-- Icon Stylesheets -->
+    <link rel="stylesheet" href="assets/lib/ionicons/css/ionicons.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome/css/font-awesome.min.css">
+
+
+
+
+
+
+    <!-- Custom Template Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preload" href="assets/favicon.ico">
+
+    <link rel="icon" href="assets/favicon.ico">
+
+    <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
+
+<script>
+    google.maps.event.addDomListener(window, 'load', init);
+    var map;
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(53.480838,-2.243195),
+            zoom: 17,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.DEFAULT,
+            },
+            disableDoubleClickZoom: true,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            },
+            scaleControl: true,
+            scrollwheel: false,
+            panControl: true,
+            streetViewControl: true,
+            draggable : true,
+            overviewMapControl: true,
+            overviewMapControlOptions: {
+                opened: false,
+            },
+            mapTypeId: google.maps.MapTypeId.TERRAIN,
+            styles: [
+  {
+    "featureType": "landscape",
+    "stylers": [
+      {
+        "hue": "#F1FF00"
+      },
+      {
+        "saturation": -27.4
+      },
+      {
+        "lightness": 9.4
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "stylers": [
+      {
+        "hue": "#0099FF"
+      },
+      {
+        "saturation": -20
+      },
+      {
+        "lightness": 36.4
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "stylers": [
+      {
+        "hue": "#00FF4F"
+      },
+      {
+        "saturation": 0
+      },
+      {
+        "lightness": 0
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "stylers": [
+      {
+        "hue": "#FFB300"
+      },
+      {
+        "saturation": -38
+      },
+      {
+        "lightness": 11.2
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "stylers": [
+      {
+        "hue": "#00B6FF"
+      },
+      {
+        "saturation": 4.2
+      },
+      {
+        "lightness": -63.4
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "stylers": [
+      {
+        "hue": "#9FFF00"
+      },
+      {
+        "saturation": 0
+      },
+      {
+        "lightness": 0
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  }
+],
+        }
+        var mapElement = document.getElementById('map-canvas');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
+['Bistro', 'undefined', 'undefined', 'undefined', 'undefined', 53.4807593, -2.2426305000000184, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png']
+        ];
+        for (i = 0; i < locations.length; i++) {
+      if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+      if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+      if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+            marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+link = '';     }
+
+}
+</script>
+<style>
+    .gm-style-iw * {
+        display: block;
+        width: 100%;
+    }
+    .gm-style-iw h4, .gm-style-iw p {
+        margin: 0;
+        padding: 0;
+    }
+    .gm-style-iw a {
+        color: #4272db;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- main container -->
+<div class="body-content">
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+<!-- Fixed Top Navigation -->
+<nav id="fixedTopNav" class="navbar navbar-fixed-top main-navigation" role="navigation">
+    <div class="container">
+
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="ion-drag"></span>
+            </button>
+
+            <!-- Logo -->
+            <div class="navbar-brand">
+                <span class="sr-only">lefty's guitars</span>
+                <a href="index.html"><img class="img-responsive the-logo" src="assets/images/Leftys-Logo-2.png" alt="Lefty's Logo">
+                </a>
+            </div>
+            <!-- /Logo -->
+
+        </div><!-- /.navbar-header -->
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="main-nav-collapse">
+            <ul class="nav navbar-nav navbar-right" role="menu">
+
+                <li class="">
+                    <a href="index.html"><span>Home</span></a>
+                </li>
+
+                <li class="active">
+                    <a href="guitars.html"><span>Guitars</span></a>
+                </li>
+
+                <li class="">
+                    <a href="accessories.html"><span>Accessories</span></a>
+                </li>
+
+                <li class="">
+                  <a href="contact.html"><span>Contact</span></a>
+                </li>
+            </ul>
+        </div>
+        <!-- /Navigation Links -->
+
+    </div><!-- /.container -->
+</nav>
+<!-- /Fixed Top Navigation -->
+
+
+<div class="bump"></div>
+
+<section class="text-center m-r-10">
+  <h2 class="text-center guitar-title-text guitar-text-bump">Taylor 814 CE 2015 ES2</h2>
+</section>
+
+<section id="gallery" class="gallery">
+    <div class="container">
+        <div id="sortable_gallery">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-2 gallery-items p-l-0 p-r-0">
+                    <div class="item" style="margin: 0 auto; max-width: 300px; position:relative;">
+                        <img class="img-responsive" src="assets/images/taylor-814-ce-2015-es2.jpg">
+                    </div>
+                </div> <!-- /.gallery-items -->
+                <div class="col-md-6 col-md-offset-7 gallery-items p-l-0 p-r-0">
+                    <div class="item" style="margin: 0 auto; max-width: 300px; position:relative;">
+                        <h2 class="condition-text">Condition: NEW</h2>
+                        <h3 class="price-text">Price: $3699</h3>
+                        <p>Sporting one of Taylor's most popular body shapes, the Taylor 814ce Grand Auditorium Acoustic-Electric guitar is the Swiss Army knife instrument you've been hunting for. The Venetian cutaway and mother-of-pearl fretboard inlays add style to this sitka spruce and Indian rosewood guitar while Taylor's piezo-based Expression System 2 electronics help capture a more organic response.</p>
+                    </div>
+                </div> <!-- /.gallery-items -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section">
+	<div class="container">
+        <div class="contact-social">
+            <div class="row">
+                <div class="col-md-6 share-buttons">
+                    <ul class="social-icons">
+                        <li><p>Follow Us</p></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 link">
+                    <a href="contact.html">Connect with us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <p>1200 Somewhere Blvd. Austin, TX 78999</p>
+                    <p>hello@leftysguitars.net</p>
+                    <p>(512) 555-1212</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- start: footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <p class="text-center"> &copy; 2017 Lefty's Guitars. All Rights Reserved. </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end: footer -->
+
+
+
+
+</div><!--/main container-->
+
+
+
+
+<!-- Javascripts  -->
+
+<script src="assets/lib/components-modernizr/modernizr.js"></script>
+<script src="assets/lib/jquery/dist/jquery.js"></script>
+<script src="assets/lib/bootstrap/dist/js/bootstrap.js"></script>
+<script src="assets/lib/bootstrap/dist/js/bootstrap.js"></script>
+<script src="assets/lib/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+
+
+<script src="assets/lib/isotope/dist/isotope.pkgd.min.js"></script>
+
+
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  $(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 100) {
+      $('.the-logo').fadeIn();
+    } else {
+      $('.the-logo').fadeOut();
+    }
+  });
+</script>
+
+</body>
+</html>
