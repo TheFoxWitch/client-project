@@ -1591,6 +1591,7 @@ select#time.form-control.time {
   position: relative;
   bottom: -20px;
   color: #333;
+  margin-bottom: 40px;
 }
 
 accessories-image {
