@@ -716,7 +716,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 
 .time .wrapper .wrapper-inner {
   background-color: rgba(0, 0, 0, 0.45);
-  color: #daa456;
+  color: #e96333;
   padding: 200px 0px;
   text-transform: uppercase;
 }
