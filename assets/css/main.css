@@ -430,7 +430,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .main-navigation .navbar-nav li a {
-  color: rgba(255, 255, 255, 0.75);
+  color: #e96333;
   font-size: 11px;
   letter-spacing: 2px;
   margin-bottom: -1px;
