@@ -21,7 +21,7 @@
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #daa555;
+  border-top-color: #e96333;
   -webkit-animation: spin 2s linear infinite;
   /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 2s linear infinite;
@@ -285,7 +285,7 @@ ul li {
 }
 
 .wrapper-inner span {
-  color: #daa555;
+  color: #e96333;
   font-family: 'Great Vibes', cursive;
   font-size: 72px;
   line-height: 105px;
@@ -326,7 +326,7 @@ ul li {
 ---------------------------------------------------------------------*/
 
 .btn {
-  background-color: #daa555;
+  background-color: #e96333;
   border-radius: 20px;
   color: #ffffff;
   padding: 5px 20px;
@@ -344,9 +344,9 @@ ul li {
 
 .btn-bottom-line {
   background-color: transparent;
-  border-bottom: 2px solid #daa555;
+  border-bottom: 2px solid #e96333;
   border-radius: 0px;
-  color: #daa555;
+  color: #e96333;
 }
 
 /*------------------------------------------------------------------
@@ -439,6 +439,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   position: relative;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 767px) {
@@ -459,7 +460,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .main-navigation .navbar-nav li a:hover span, .main-navigation .navbar-nav li a:focus span {
-  background-color: #daa555;
+  background-color: #e96333;
   color: #ffffff;
   border-radius: 0px;
 }
@@ -476,7 +477,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .main-navigation .navbar-nav li.active a span {
-  background: #daa555;
+  background: #e96333;
   color: #ffffff;
 }
 
@@ -672,7 +673,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .inner-header span {
-  color: #daa555;
+  color: #e96333;
   font-family: 'Open Sans', sans-serif;
   font-size: 72px;
   line-height: 72px;
@@ -777,7 +778,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .cta a, .cta span {
-  color: #daa555;
+  color: #e96333;
 }
 
 /*------------------------------------------------------------
@@ -790,7 +791,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .about .content-heading p {
-  color: #daa555;
+  color: #e96333;
   margin-bottom: 40px;
 }
 
@@ -873,7 +874,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .menu .menu-details li.special {
-  border: 1px solid #DAA555;
+  border: 1px solid #e96333;
   padding-top: 15px;
   padding-bottom: 15px;
   height: 71px;
@@ -884,7 +885,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .menu .menu-details li.special .special-text {
-  background-color: #DAA555;
+  background-color: #e96333;
   margin-top: 10px;
 }
 
@@ -964,7 +965,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .reservation .image-gallery .view-more a:hover {
-  color: #daa555;
+  color: #e96333;
 }
 
 .reservation .image-gallery .view-more.hovered {
@@ -1017,7 +1018,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 --------------------------------------------------------------------*/
 
 .content-heading span.subtitle {
-  color: #daa555;
+  color: #e96333;
   font-family: 'Open Sans', sans-serif;
   font-size: 72px;
   line-height: 60px;
@@ -1119,7 +1120,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 
 .contact .contact-time ul li .time-divider::after {
   position: absolute;
-  border: 1px solid #DAA555;
+  border: 1px solid #e96333;
   content: "";
   right: 0;
   height: 200%;
@@ -1144,17 +1145,17 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .catering .catering-intro .content-details p u {
-  color: #daa555;
+  color: #e96333;
 }
 
 .catering .catering-intro .content-details .msg {
-  color: #daa555;
+  color: #e96333;
   font-size: 24px;
   margin-bottom: 25px;
 }
 
 .catering .catering-intro .content-details a {
-  color: #daa555;
+  color: #e96333;
   font-size: 16px;
   line-height: 35px;
   text-decoration: underline;
@@ -1166,7 +1167,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .panel-group {
-  border: 1px solid #daa555;
+  border: 1px solid #e96333;
 }
 
 .panel-group .panel {
@@ -1185,7 +1186,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .panel-group .panel.panel-default .panel-heading .panel-title {
-  color: #daa555;
+  color: #e96333;
   font-weight: normal;
 }
 
@@ -1231,12 +1232,12 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .panel-group .panel+.panel {
-  border-top: 1px solid #daa555;
+  border-top: 1px solid #e96333;
   margin-top: 0px;
 }
 
 .panel-default>.panel-heading+.panel-collapse>.panel-body {
-  border-top-color: #daa555;
+  border-top-color: #e96333;
 }
 
 .last-desc {
@@ -1253,7 +1254,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .packages .package-list h4 {
-  color: #daa555;
+  color: #e96333;
   margin-bottom: 20px;
   font-weight: normal;
 }
@@ -1287,7 +1288,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 .giftcard-order .content-details .order-title {
   font-size: 21px;
   font-weight: bold;
-  color: #DAA555;
+  color: #e96333;
   text-transform: uppercase;
   margin-bottom: 50px;
   line-height: 35px;
@@ -1331,7 +1332,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .giftcard-order .giftcard-description-wrapper .giftcard-content .valign-center .giftcard-description .card-name {
-  color: #daa555;
+  color: #e96333;
   font-family: 'Great Vibes', cursive;
   font-size: 50px;
   line-height: 75px;
@@ -1370,7 +1371,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   position: absolute;
   font-size: 40px;
   opacity: 1;
-  color: #daa555;
+  color: #e96333;
   line-height: 0px;
   top: 50%;
   margin: 0px -45px;
