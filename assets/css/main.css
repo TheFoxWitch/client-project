@@ -894,11 +894,11 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   text-align: center;
 }
 
-@media only screen and (max-width: 767px) {
+/*@media only screen and (max-width: 767px) {
   .menu .menu-details li.special .special-text {
     margin-top: 50px;
   }
-}
+}*/
 
 @media only screen and (max-width: 767px) {
   .menu .content-details {
