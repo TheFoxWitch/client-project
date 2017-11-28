@@ -1625,6 +1625,14 @@ accessories-image {
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 992px) {
+  .the-logo {
+    position: relative;
+    bottom: -12px;
+    max-width: 125px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .the-logo {
     position: relative;
