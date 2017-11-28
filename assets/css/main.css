@@ -1625,6 +1625,22 @@ accessories-image {
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 767px) {
+  .the-logo {
+    position: relative;
+    max-width: 125px;
+    bottom: -12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section_2 {
+    position: relative;
+    bottom: -222px;
+    height: 600px;
+  }
+}
+
 /*-----------------------------------------------------------------------
 							footer
 --------------------------------------------------------------------------*/
