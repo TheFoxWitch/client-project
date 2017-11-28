@@ -1646,12 +1646,15 @@ accessories-image {
     top: -90px;
     margin-left: 0;
   }
-}
-
-@media only screen and (max-width: 425px) {
   .contact-text {
     position: relative;
     top: -90px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .gallery .gallery-items .item img {
+    left: -25px;
   }
 }
 
