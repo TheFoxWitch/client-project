@@ -1640,6 +1640,14 @@ accessories-image {
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .inner-header span {
+    position: relative;
+    top: -90px;
+    margin-left: 0;
+  }
+}
+
 /*-----------------------------------------------------------------------
 							footer
 --------------------------------------------------------------------------*/
