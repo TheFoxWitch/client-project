@@ -50,7 +50,7 @@
 	$message = $_POST['message'];
 	$from = $email;
 	$to = 'hello@leftysguitars.net';  // please change this email id
-	$subject = 'Contact Form : Lefty's' Guitars';
+	$subject = 'Hello';
 
 	$body = "From: $fname. ' '. $lname\n E-Mail: $email\n Message:\n $message";
 
