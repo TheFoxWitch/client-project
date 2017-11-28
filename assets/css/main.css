@@ -1652,6 +1652,18 @@ accessories-image {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .inner-header span {
+    position: relative;
+    top: -70px;
+    margin-left: 0;
+  }
+  .contact-text {
+    position: relative;
+    top: -65px;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .gallery .gallery-items .item img {
     left: -25px;
