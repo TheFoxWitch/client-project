@@ -1625,7 +1625,7 @@ accessories-image {
   margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .the-logo {
     position: relative;
     max-width: 125px;
@@ -1633,7 +1633,7 @@ accessories-image {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .section_2 {
     position: relative;
     bottom: -222px;
