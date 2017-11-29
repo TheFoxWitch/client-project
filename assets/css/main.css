@@ -1643,6 +1643,7 @@ accessories-image {
 .basic-info {
   position: relative;
   bottom: -25px;
+  display: inline-grid;
 }
 
 .basic-info>a {
