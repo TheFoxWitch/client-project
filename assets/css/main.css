@@ -1639,7 +1639,7 @@ a {
   text-decoration: none;
 }
 
-.mail-info-link {
+.mail-info-link, .call-us-link {
   color: white;
   font-size: 20px;
 }
