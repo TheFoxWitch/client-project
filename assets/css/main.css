@@ -1634,12 +1634,12 @@ accessories-image {
   color: #e96333;
 }
 
-a[href="contact.html"] {
+a {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
-a[href="contact.html"]:hover {
+a:hover {
   color: #e96333;
 }
 
