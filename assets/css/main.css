@@ -1650,6 +1650,14 @@ a:hover, a:visited {
   color: #e96333;
 }
 
+a[href="guitars.html"] {
+  color: white;
+}
+
+a[href="guitars.html"]:hover {
+  color: #333;
+}
+
 @media only screen and (max-width: 992px) {
   .the-logo {
     position: relative;
