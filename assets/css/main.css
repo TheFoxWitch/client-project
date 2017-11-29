@@ -1634,22 +1634,19 @@ accessories-image {
   color: #e96333;
 }
 
-a {
-  color: #333;
-  text-decoration: none;
-}
-
 .mail-info-link, .call-us-link {
   color: white;
   font-size: 20px;
 }
 
 a {
+  color: #333;
+  text-decoration: none;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
-a:hover {
+a:hover, a:visited {
   color: #e96333;
 }
 
