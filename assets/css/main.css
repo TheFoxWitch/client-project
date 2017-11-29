@@ -1625,12 +1625,12 @@ accessories-image {
   margin-bottom: 20px;
 }
 
-i .fa {
+.contact-social a, .contact-social p {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
-i .fa:hover {
+.contact-social a:hover, .contact-social p:hover {
   color: #e96333;
 }
 
