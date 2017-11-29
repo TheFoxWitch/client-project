@@ -1635,6 +1635,7 @@ accessories-image {
 }
 
 .mail-info-link, .call-us-link {
+  display: block;
   color: white;
   font-size: 20px;
 }
