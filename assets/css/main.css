@@ -1635,6 +1635,11 @@ accessories-image {
 }
 
 a {
+  color: #333;
+  text-decoration: none;
+}
+
+a {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
