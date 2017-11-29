@@ -1636,8 +1636,8 @@ accessories-image {
 
 .mail-info-link, .call-us-link {
   display: block;
-  color: white;
-  font-size: 20px;
+  /*color: white;
+  font-size: 20px;*/
 }
 
 .basic-info {
@@ -1658,6 +1658,22 @@ a {
 
 a:hover, a:visited {
   color: #e96333;
+}
+
+a[href="tel:512-555-1212"]:hover {
+  color: #333;
+}
+
+a[href="tel:512-555-1212"] {
+  color: white;
+}
+
+a[href="mailto:info@leftysguitars.net"]:hover {
+  color: #333;
+}
+
+a[href="mailto:info@leftysguitars.net"] {
+  color: white;
 }
 
 a[href="guitars.html"] {
