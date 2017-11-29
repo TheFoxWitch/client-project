@@ -1625,6 +1625,15 @@ accessories-image {
   margin-bottom: 20px;
 }
 
+i .fa {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+i .fa:hover {
+  color: #e96333;
+}
+
 @media only screen and (max-width: 992px) {
   .the-logo {
     position: relative;
