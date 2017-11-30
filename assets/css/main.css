@@ -1695,6 +1695,7 @@ a[href="guitars.html"]:hover {
 
 @media only screen and (max-width: 767px) {
   .the-logo {
+    top: -2px;
     position: relative;
     max-width: 125px;
   }
@@ -1702,8 +1703,32 @@ a[href="guitars.html"]:hover {
 
 @media only screen and (max-width: 425px) {
   .the-logo {
-    bottom: -6px;
+    top: 0px;
     max-width: 115px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .inner-header span .us-text {
+    position: relative;
+    top: -90px;
+    margin-left: 0;
+  }
+  .contact-text {
+    position: relative;
+    top: -90px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .inner-header span .us-text {
+    position: relative;
+    top: -90px;
+    margin-left: 0;
+  }
+  .contact-text {
+    position: relative;
+    top: -90px;
   }
 }
 

@@ -13,10 +13,10 @@
             $errors['time'] = 'Please select time of reservation';
       }
 
-      //Check if people has been entered
-      if (!isset($_POST['people'])) {
-            $errors['people'] = 'Please enter the number of people for reservation';
-      }
+      // //Check if people has been entered
+      // if (!isset($_POST['people'])) {
+      //       $errors['people'] = 'Please enter the number of people for reservation';
+      // }
 
       // Check if email has been entered and is valid
       if (!isset($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
@@ -61,7 +61,7 @@
       if (mail ($to, $subject, $body)) {
             $result .= '<div class="alert alert-success alert-dismissible" role="alert">';
             $result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-            $result .= 'Thank You! We will reserve a table <i class="fa fa-smile"> in that date';
+            $result .= 'Thank You! We will reserve a spot <i class="fa fa-smile"> at that date and time';
             $result .= '</div>';
 
             echo $result;
