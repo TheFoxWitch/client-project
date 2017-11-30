@@ -1709,14 +1709,9 @@ a[href="guitars.html"]:hover {
 }
 
 @media only screen and (max-width: 991px) {
-  .inner-header span .us-text {
+  .the-text {
     position: relative;
-    top: -22px;
-    margin-left: 0;
-  }
-  .contact-text {
-    position: relative;
-    top: -13px;
+    top: -40px;
   }
 }
 
