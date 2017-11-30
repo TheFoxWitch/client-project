@@ -1773,3 +1773,11 @@ footer {
   padding: 30px 0px;
   margin-top: 50px;
 }
+
+.footer-link {
+  color: #333;
+}
+
+.footer-link:hover {
+  color: #e96333;
+}
