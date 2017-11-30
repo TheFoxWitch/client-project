@@ -1640,6 +1640,10 @@ accessories-image {
   font-size: 20px;*/
 }
 
+.item>p {
+  color: white;
+}
+
 .basic-info {
   position: relative;
   bottom: -25px;
