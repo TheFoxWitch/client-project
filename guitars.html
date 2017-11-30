@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Phillip Meek" />
-    <meta name="Desion" content="lefty's guitars left handded guitars">
-    <meta name="keywords" content="lefty's guitars, left handded guitars, guitars, lefty's">
+    <meta name="author" content="ThemeWagon" />
+    <meta name="Description" content="Rights Non-Profit Template">
+    <meta name="keywords" content="non-profit, child">
 
     <title>Guitars | Lefty's</title>
 
@@ -52,10 +52,166 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="preload" href="assets/favicon.ico">
 
-    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" href="/assets/favicon.ico">
 
     <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
 
+<script>
+    google.maps.event.addDomListener(window, 'load', init);
+    var map;
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(53.480838,-2.243195),
+            zoom: 17,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.DEFAULT,
+            },
+            disableDoubleClickZoom: true,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            },
+            scaleControl: true,
+            scrollwheel: false,
+            panControl: true,
+            streetViewControl: true,
+            draggable : true,
+            overviewMapControl: true,
+            overviewMapControlOptions: {
+                opened: false,
+            },
+            mapTypeId: google.maps.MapTypeId.TERRAIN,
+            styles: [
+  {
+    "featureType": "landscape",
+    "stylers": [
+      {
+        "hue": "#F1FF00"
+      },
+      {
+        "saturation": -27.4
+      },
+      {
+        "lightness": 9.4
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "stylers": [
+      {
+        "hue": "#0099FF"
+      },
+      {
+        "saturation": -20
+      },
+      {
+        "lightness": 36.4
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "stylers": [
+      {
+        "hue": "#00FF4F"
+      },
+      {
+        "saturation": 0
+      },
+      {
+        "lightness": 0
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "stylers": [
+      {
+        "hue": "#FFB300"
+      },
+      {
+        "saturation": -38
+      },
+      {
+        "lightness": 11.2
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "stylers": [
+      {
+        "hue": "#00B6FF"
+      },
+      {
+        "saturation": 4.2
+      },
+      {
+        "lightness": -63.4
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "stylers": [
+      {
+        "hue": "#9FFF00"
+      },
+      {
+        "saturation": 0
+      },
+      {
+        "lightness": 0
+      },
+      {
+        "gamma": 1
+      }
+    ]
+  }
+],
+        }
+        var mapElement = document.getElementById('map-canvas');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
+['Bistro', 'undefined', 'undefined', 'undefined', 'undefined', 53.4807593, -2.2426305000000184, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png']
+        ];
+        for (i = 0; i < locations.length; i++) {
+      if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+      if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+      if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+            marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+link = '';     }
+
+}
+</script>
 <style>
     .gm-style-iw * {
         display: block;
@@ -131,7 +287,7 @@
 <!-- /Fixed Top Navigation -->
 
 
-<header class="inner-header text-center slim-bg" style="background-image: url(assets/images/marcin-nowak-6007.jpg); background-position-y: bottom;">
+<header class="inner-header text-center slim-bg" style="background-image: url(assets/images/bgn-guitarplayer.png); background-position-y: bottom;">
     <div class="container">
     	<h2 class=" text-center text-uppercase">
             check our
@@ -142,7 +298,7 @@
 
 
     <!--  start: menu section -->
-    <section class="menu" style="margin-bottom: 123px;">
+    <section class="menu">
         <div class="container-fluid">
             <div class="row equal_height">
                 <div class="col-md-5 p-l-0 p-r-0 section_1">
@@ -176,19 +332,19 @@
                   <div class="content-details">
                     <div class="menu-details">
                       <li>
-                        <a href="eastman-805ce-natural.html">Eastman 805 CE</a>
+                        <label>Eastman 805 CE</label>
                         <span>$2999.00</span>
                       </li>
                       <li>
-                        <a href="fender-american-vintage-1952.html">Fender American Vintage 1952 Telecaster - Reissue</a>
+                        <label>Fender American Vintage 1952 Telecaster - Reissue</label>
                         <span>$1799.00</span>
                       </li>
                       <li>
-                        <a href="fender-american-vintage-56.html">Fender American Vintage 56 Stratocaster 2-color</a>
+                        <label>Fender American Vintage 56 Stratocaster 2-color</label>
                         <span>$2599.00</span>
                       </li>
                       <li>
-                        <a href="gibson-les-paul-custom-1959-2003.html">Gibson Les Paul Custom Shop 1959 - 2003 Reissue</a>
+                        <label>Gibson Les Paul Custom Shop 1959 - 2003 Reissue</label>
                         <span>$8499.00</span>
                       </li>
                     </div>
@@ -222,10 +378,10 @@
     </section> <!-- /#menu-header -->
 <!-- end: menu-header section -->
 
-<!-- blank div to keep the page from scrolling too far for the selection section -->
-<div id="selection"></div>
+
+
 	<!--  start: menu section -->
-    <section class="menu guitars-list">
+    <section class="menu guitars-list" id="selection">
         <div class="container-fluid">
             <div class="row equal_height">
                 <div class="col-md-12 p-l-0 p-r-0">
@@ -238,11 +394,11 @@
                       <h2 class="new-guitars">NEW GUITARS</h2>
                   </div>
                     <li>
-                        <a href="fender-american-vintage.html">Fender American Vintage 56 Stratocaster 2-color</a>
+                        <label>Fender American Vintage 56 Stratocaster 2-color</label>
                         <span>$2599.00</span>
                     </li>
                     <li>
-                      <a href="gibson-les-paul-custom-1959-2003.html"> Gibson Les Paul Custom Shop 1959 - 2003 Reissue</a>
+                      <label>Gibson Les Paul Custom Shop 1959 - 2003 Reissue</label>
                       <span>$8499.00</span>
                     </li>
                 </div>
@@ -269,22 +425,22 @@
               </p>
               <div class="menu-details">
                   <li>
-                      <a href="martin-000-28-ec-sunburst.html">Martin 000-28 EC Sunburst</a>
+                      <label>Martin 000-28 EC Sunburst</label>
                       <span>$4199.00</span>
                   </li>
                   <li class="special">
-                      <a href="Taylor-814-CE-2015-ES2.html">Taylor 814 CE 2015 ES2</a>
+                      <label>Taylor 814 CE 2015 ES2</label>
 
                       <div class="special-text">
                           <p>$3699.00</p>
                       </div>
                   </li>
                   <li>
-                      <a href="gretch-brian-setzer.html">Gretch Brian Setzer Left Handed Guitar</a>
+                      <label>Gretch Brian Setzer Left Handed Guitar</label>
                       <span>$3399.00</span>
                   </li>
                   <li>
-                      <a href="gibson-les-paul-custom-shop-1959-2003.html">Gibson Les Paul Custom Shop 1959 - 2003 Reissue</a>
+                      <label>Gibson Les Paul Custom Shop 1959 - 2003 Reissue</label>
                       <span>$8499.00</span>
                   </li>
               </div>
@@ -309,39 +465,39 @@
             <h3 id="selection" class="menu-title">All Guitars</h3>
             <div class="menu-details">
                 <li>
-                    <a href="martin-000-28-ec-sunburst.html">Martin 000-28 EC Sunburst</a>
+                    <label>Martin 000-28 EC Sunburst</label>
                     <span>$4199.00</span>
                 </li>
                 <li>
-                    <a href="Taylor-814-CE-2015-ES2.html">Taylor 814 CE 2015 ES2</a>
+                    <label>Taylor 814 CE 2015 ES2</label>
                     <span>$3699.00</span>
                 </li>
                 <li>
-                    <a href="gretch-brian-setzer.html">Gretch Brian Setzer Left Handed Guitar</a>
+                    <label>Gretch Brian Setzer Left Handed Guitar</label>
                     <span>$3399.00</span>
                 </li>
                 <li>
-                    <a href="gibson-les-paul-custom-1959-2003.html">Gibson Les Paul Custom Shop 1959 - 2003 Reissue</a>
+                    <label>Gibson Les Paul Custom Shop 1959 - 2003 Reissue</label>
                     <span>$8499.00</span>
                 </li>
 
                 <li>
-                    <a href="eastman-805ce-natural.html">Eastman 805CE Natural</a>
+                    <label>Eastman 805CE Natural</label>
                     <span>$2999.00</span>
                 </li>
 
                 <li>
-                    <a href="fender-american-vintage-1952.html">Fender American Vintage 1952 Telecaster -  Reissue</a>
+                    <label>Fender American Vintage 1952 Telecaster -  Reissue</label>
                     <span>$1799.00</span>
                 </li>
 
                 <li>
-                    <a href="fender-american-vintage-56.html">Fender American Vintage 56 Stratocaster 2-color</a>
+                    <label>Fender American Vintage 56 Stratocaster 2-color</label>
                     <span>$2599.00</span>
                 </li>
 
                 <li>
-                    <a href="martin-hd-28.html">Martin HD-28 V Natural</a>
+                    <label>Martin HD-28 V Natural</label>
                     <span>$3999.00</span>
                 </li>
             </div>
@@ -374,7 +530,7 @@
 
                         <div class="content-details">
                             <p>
-                                Call <span>+(512) 555-1212</span> or Fill out the <a href="index.html#reservation">form</a> to make a reservation.
+                                Call <span>+(512) 555-1212</span> or Fill-up the <a href="index.html#reservation">Reservation form</a> to make a reservation
                             </p>
                         </div>
                     </div>
@@ -385,10 +541,9 @@
 <!-- end: reservation call-to-action -->
 
 
-<!-- start: footer -->
-<footer>
+<!--- contact information --->
 <section class="section">
-  <div class="container">
+	<div class="container">
         <div class="contact-social">
             <div class="row">
                 <div class="col-md-6 share-buttons">
@@ -399,6 +554,9 @@
                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
+                <div class="col-md-6 link">
+                    <a href="contact.html">Connect with us</a>
+                </div>
             </div>
         </div>
 
@@ -406,13 +564,24 @@
             <div class="row text-center">
                 <div class="col-md-6 col-md-offset-3">
                     <p>1200 Somewhere Blvd. Austin, TX 78999</p>
-                    <a class="footer-link" href="mailto:info@leftysguitars.net">info@leftysguitars.net</a>
-                    <a class="footer-link" href="tel:512-555-1212"> call: (512) 555-1212 </a>
+                    <p>hello@leftysguitars.net</p>
+                    <p>(512) 555-1212</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
+<!-- start: footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <p class="text-center"> &copy; 2017 Lefty's Guitars. All Rights Reserved. </p>
+      </div>
+    </div>
+  </div>
 </footer>
 <!-- end: footer -->
 
