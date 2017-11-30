@@ -1718,18 +1718,18 @@ a[href="guitars.html"]:hover {
 @media only screen and (max-width: 778px) {
   .the-text {
     position: relative;
-    top: -20px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .the-text {
-    position: relative;
-    top: -40px;
+    top: -62px;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .the-text {
+    position: relative;
+    top: -67px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
   .the-text {
     position: relative;
     top: -40px;
