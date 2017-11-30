@@ -1795,6 +1795,7 @@ a.footer-link[href="mailto:info@leftysguitars.net"] {
 }
 
 .footer-link {
+  display: block;
   color: #333;
 }
 
