@@ -1729,6 +1729,13 @@ a[href="guitars.html"]:hover {
   }
 }
 
+@media only screen and (max-width: 741px) {
+  .the-text {
+    position: relative;
+    top: -84px;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .the-text {
     position: relative;
