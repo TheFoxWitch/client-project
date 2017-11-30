@@ -1711,48 +1711,33 @@ a[href="guitars.html"]:hover {
 @media only screen and (max-width: 991px) {
   .inner-header span .us-text {
     position: relative;
-    top: -90px;
+    top: -22px;
     margin-left: 0;
   }
   .contact-text {
     position: relative;
-    top: -90px;
+    top: -13px;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .inner-header span .us-text {
+@media only screen and (max-width: 778px) {
+  .the-text {
     position: relative;
-    top: -90px;
-    margin-left: 0;
-  }
-  .contact-text {
-    position: relative;
-    top: -90px;
+    top: -20px;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  .inner-header span .us-text {
+  .the-text {
     position: relative;
-    top: -90px;
-    margin-left: 0;
-  }
-  .contact-text {
-    position: relative;
-    top: -90px;
+    top: -40px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .inner-header span .us-text {
+  .the-text {
     position: relative;
-    top: -70px;
-    margin-left: 0;
-  }
-  .contact-text {
-    position: relative;
-    top: -65px;
+    top: -40px;
   }
 }
 
