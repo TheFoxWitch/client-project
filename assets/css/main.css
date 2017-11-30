@@ -1774,19 +1774,19 @@ footer {
   margin-top: 50px;
 }
 
-a[href="tel:512-555-1212"] .footer-link:hover {
+a.footer-link [href="tel:512-555-1212"]:hover {
   color: #e96333;
 }
 
-a[href="tel:512-555-1212"] .footer-link {
+a .footer-link [href="tel:512-555-1212"] {
   color: #333;
 }
 
-a[href="mailto:info@leftysguitars.net"] .footer-link:hover {
+a.footer-link [href="mailto:info@leftysguitars.net"]:hover {
   color: #e96333;
 }
 
-a[href="mailto:info@leftysguitars.net"] .footer-link {
+a.footer-link [href="mailto:info@leftysguitars.net"] {
   color: #333;
 }
 
