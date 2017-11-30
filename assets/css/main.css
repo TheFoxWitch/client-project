@@ -1711,7 +1711,7 @@ a[href="guitars.html"]:hover {
 @media only screen and (max-width: 991px) {
   .the-text {
     position: relative;
-    top: -40px;
+    top: -35px;
   }
 }
 
