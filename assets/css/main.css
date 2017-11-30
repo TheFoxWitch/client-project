@@ -1703,7 +1703,7 @@ a[href="guitars.html"]:hover {
 
 @media only screen and (max-width: 425px) {
   .the-logo {
-    top: 0px;
+    top: -10px;
     max-width: 115px;
   }
 }
@@ -1732,7 +1732,7 @@ a[href="guitars.html"]:hover {
 @media only screen and (max-width: 425px) {
   .the-text {
     position: relative;
-    top: -40px;
+    top: -96px;
   }
 }
 
