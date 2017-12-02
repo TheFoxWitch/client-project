@@ -69,19 +69,6 @@
         color: #4272db;
     }
 </style>
-
-<script>
-  $(document).scroll(function() {
-    var y = $(this).scrollTop();
-    if (y > 100) {
-      $('.the-logo').fadeIn();
-    } else {
-      $('.the-logo').fadeOut();
-    }
-    $(".item").css({position: 'relative'});
-  });
-</script>
-
 </head>
 
 <body>
@@ -240,7 +227,17 @@
 
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/main.js"></script>
-
+<script>
+  $(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 100) {
+      $('.the-logo').fadeIn();
+    } else {
+      $('.the-logo').fadeOut();
+    }
+    $(".item").css({position: 'relative'});
+  });
+</script>
 
 </body>
 </html>
