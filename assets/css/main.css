@@ -1640,8 +1640,8 @@ accessories-image {
   font-size: 20px;*/
 }
 
-.item>p {
-  /*text-align: center;*/
+.item>h4 {
+  text-align: center;
 }
 
 .basic-info {
