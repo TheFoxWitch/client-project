@@ -1642,6 +1642,7 @@ accessories-image {
 
 .item>h4 {
   text-align: center;
+  line-height: 25px;
 }
 
 .basic-info {
