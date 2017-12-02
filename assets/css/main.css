@@ -1645,6 +1645,10 @@ accessories-image {
   line-height: 25px;
 }
 
+.blurb {
+  text-align: justify;
+}
+
 .basic-info {
   position: relative;
   bottom: -25px;
