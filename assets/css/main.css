@@ -1707,7 +1707,7 @@ a[href="guitars.html"]:hover {
 
 @media only screen and (max-width: 425px) {
   .the-logo {
-    bottom: -8px;
+    bottom: -2px;
     max-width: 115px;
   }
 }
