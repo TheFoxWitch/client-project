@@ -1706,7 +1706,7 @@ a[href="#selection"] {
   font-size: 14pt;
 }
 
-.inventory {
+a[href="guitars.html"].inventory {
   color: #e96333;
 }
 
