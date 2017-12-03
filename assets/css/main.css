@@ -1091,6 +1091,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 .contact-info p {
   font-family: 'Slabo 27px', serif;
   letter-spacing: 1px;
+  font-size: 13pt;
 }
 
 /*======================  contact page ============================== */
@@ -1631,6 +1632,7 @@ accessories-image {
 .contact-social a, .contact-social p {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  font-size: 13pt;
 }
 
 .contact-social a:hover, .contact-social p:hover {
@@ -1711,10 +1713,15 @@ a[href="#selection"] {
 
 a[href="guitars.html"].inventory {
   color: #e96333;
+  font-size: 15pt;
 }
 
 a[href="guitars.html"].inventory:hover {
   color: #333;
+}
+
+.btn-reservation {
+  font-size: 15pt;
 }
 
 @media only screen and (max-width: 992px) {
@@ -1812,6 +1819,7 @@ a.footer-link[href="tel:512-555-1212"]:hover {
 
 a.footer-link[href="tel:512-555-1212"] {
   color: #333;
+  font-size: 12pt;
 }
 
 a.footer-link[href="mailto:info@leftysguitars.net"]:hover {
@@ -1820,6 +1828,7 @@ a.footer-link[href="mailto:info@leftysguitars.net"]:hover {
 
 a.footer-link[href="mailto:info@leftysguitars.net"] {
   color: #333;
+  font-size: 12pt;
 }
 
 .footer-link {
