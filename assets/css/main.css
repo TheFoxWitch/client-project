@@ -1694,6 +1694,18 @@ a[href="guitars.html"]:hover {
   color: #333;
 }
 
+.menu-details>li>a {
+  font-size: 14pt;
+}
+
+.menu-details>li>span {
+  font-size: 12pt;
+}
+
+a[href="#selection"] {
+  font-size: 14pt;
+}
+
 @media only screen and (max-width: 992px) {
   .the-logo {
     position: relative;
