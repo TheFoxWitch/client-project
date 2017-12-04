@@ -1724,7 +1724,11 @@ a[href="guitars.html"].inventory:hover {
   font-size: 15pt;
 }
 
-a[href="tel:512-555-1212"]#tele {
+.content-details li p {
+  font-size: 14pt;
+}
+
+[href="tel:512-555-1212"]#tele {
   color: #e96333;
 }
 
