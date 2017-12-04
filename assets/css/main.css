@@ -1488,19 +1488,17 @@ h1 {
   }
 }
 
-p {
-  a {
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    color: #fff;
-    padding: 5px 10px;
-    margin: 0 5px;
-    background-color: darken($select-background, 2);
-    @include transition(all 0.2s ease-in);
-    &:hover {
-      background-color: darken($select-background, 5);
-    }
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: darken($select-background, 2);
+  @include transition(all 0.2s ease-in);
+  &:hover {
+    background-color: darken($select-background, 5);
   }
 }
 
