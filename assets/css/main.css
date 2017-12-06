@@ -1578,6 +1578,10 @@ p {
   }
 }
 
+select#date.form-control {
+  height: 40px;
+}
+
 select#time.form-control.time {
   height: 40px;
 }

@@ -53,7 +53,7 @@
       $to = 'info@leftysguitars.net';  // please change this email id
       $subject = 'Guitar Viewing';
 
-      $body = "From: E-Mail: $email\n Date: $date\n Time: $time\n Number of people: $people";
+      $body = "From: E-Mail: $email\n Date: $date\n Time: $time";
 
 
       //send the email
