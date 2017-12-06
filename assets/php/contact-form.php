@@ -52,7 +52,7 @@
 	$to = "hello@leftysguitars.net";  // please change this email id
 	$subject = 'Hello';
 
-	$body = "From: $fname. ' '. $lname\n E-Mail: $email\n Message:\n $message";
+	$body = "From:\n First Name: $fname\n Last Name: $lname\n E-Mail: $email\n Message:\n $message";
 
 
 	//send the email

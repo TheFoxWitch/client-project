@@ -1578,7 +1578,7 @@ p {
   }
 }
 
-select#date.form-control {
+input#date.form-control {
   height: 40px;
 }
 
