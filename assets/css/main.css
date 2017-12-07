@@ -1816,11 +1816,11 @@ a[href="guitars.html"].inventory:hover {
 }
 
 @media only screen and (max-width: 480px) {
-  .image-hero {
-    display: none;
+  .time.wrapper {
+    background: none;
   }
-  .image-hero.mobile {
-    display: block;
+  .time.background {
+    background: url(../images/bgn-guitar-gibson-480.png) no-repeat center center;
   }
 }
 
