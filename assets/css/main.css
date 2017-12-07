@@ -1819,7 +1819,7 @@ a[href="guitars.html"].inventory:hover {
   .time.wrapper {
     background: none;
   }
-  .time.background {
+  .time.wrapper {
     background: url(../images/bgn-guitar-gibson-480.png) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
