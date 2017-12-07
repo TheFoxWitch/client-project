@@ -1815,6 +1815,15 @@ a[href="guitars.html"].inventory:hover {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .image-hero {
+    display: none;
+  }
+  .image-hero.mobile {
+    display: block;
+  }
+}
+
 /*-----------------------------------------------------------------------
 							footer
 --------------------------------------------------------------------------*/
