@@ -1816,10 +1816,10 @@ a[href="guitars.html"].inventory:hover {
 }
 
 @media only screen and (max-width: 480px) {
-  .time.wrapper {
+  .time .wrapper {
     background: none;
   }
-  .time.wrapper {
+  .time .background {
     background: url(../images/bgn-guitar-gibson-480.png) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
