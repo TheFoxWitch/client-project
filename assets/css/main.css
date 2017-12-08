@@ -1817,7 +1817,7 @@ a[href="guitars.html"].inventory:hover {
 
 @media only screen and (max-width: 480px) {
   .time .wrapper {
-    background: none;
+    display: none;
   }
   .time .background {
     background: url(../images/bgn-guitar-gibson-480.png) no-repeat center center;
