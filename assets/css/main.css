@@ -1812,6 +1812,18 @@ a[href="guitars.html"].inventory:hover {
   }
 }
 
+@@media screen and (min-width: 426px) {
+  .bg {
+    background-attachment: fixed;
+  }
+  .menu-header .wrapper {
+    background-attachment: fixed;
+  }
+  .time .wrapper {
+    background-attachment: fixed;
+  }
+}
+
 /*-----------------------------------------------------------------------
 							footer
 --------------------------------------------------------------------------*/
