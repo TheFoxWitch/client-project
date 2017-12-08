@@ -1812,7 +1812,7 @@ a[href="guitars.html"].inventory:hover {
   }
 }
 
-@media screen and (min-width: 426px and max-width: 1600px) {
+@media screen and (min-width: 426px) {
   .bg {
     background-attachment: fixed;
   }
