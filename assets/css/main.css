@@ -559,7 +559,6 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 --------------------------------------------------- */
 
 .bg {
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -687,7 +686,6 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 
 .menu-header .wrapper {
   background: url(../images/bgn-guitarplayer.png) no-repeat center center;
-  background-attachment: fixed;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -709,7 +707,6 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 
 .time .wrapper {
   background: url(../images/bgn-guitar-gibson.png) no-repeat center center;
-  background-attachment: fixed;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -1812,19 +1809,6 @@ a[href="guitars.html"].inventory:hover {
 @media only screen and (max-width: 425px) {
   .gallery .gallery-items .item img {
     left: -25px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .time .wrapper {
-    display: none;
-  }
-  .time .background {
-    background: url(../images/bgn-guitar-gibson-480-480.png) no-repeat center center;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
   }
 }
 
