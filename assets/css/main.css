@@ -1820,7 +1820,7 @@ a[href="guitars.html"].inventory:hover {
     display: none;
   }
   .time .background {
-    background: url(../images/bgn-guitar-gibson-480.png) no-repeat center center;
+    background: url(../images/bgn-guitar-gibson-480-480.png) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
