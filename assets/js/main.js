@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 })();
 
-jQuery(".collapse.navbar-collapse.in").removeClass("in");
+$(".collapse.navbar-collapse.in").removeClass("in");
 
 
 
