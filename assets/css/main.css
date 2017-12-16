@@ -506,9 +506,6 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 @media only screen and (max-width: 767px) {
-  .navbar-collapse {
-    background-color: rgba(0, 0, 0, 0.9);
-  }
   .main-navigation .navbar-brand {
     position: relative;
     width: 140px;
@@ -1841,6 +1838,12 @@ a[href="guitars.html"].inventory:hover {
 
 .navbar-right.no-collapse {
   float: right!important;
+}
+
+.navbar-collapse {
+  border-top: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 /*-----------------------------------------------------------------------
