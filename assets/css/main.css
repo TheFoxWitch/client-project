@@ -1829,6 +1829,9 @@ a[href="guitars.html"].inventory:hover {
 .navbar-collapse.collapse.off ul {
   margin: 0;
   padding: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .navbar-nav.no-collapse>li, .navbar-nav.no-collapse {
@@ -1837,9 +1840,6 @@ a[href="guitars.html"].inventory:hover {
 
 .navbar-right.no-collapse {
   float: right!important;
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
 }
 
 .navbar-collapse {
