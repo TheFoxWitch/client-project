@@ -1837,7 +1837,7 @@ a[href="guitars.html"].inventory:hover {
 
 .navbar-right.no-collapse {
   float: right!important;
-  border-top: none;
+  border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
