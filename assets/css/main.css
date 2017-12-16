@@ -443,11 +443,11 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   font-weight: 400;
 }
 
-/*@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .main-navigation .navbar-nav li a {
     border-bottom: 1px solid rgba(73, 71, 71, 0.15);
   }
-}*/
+}
 
 .main-navigation .navbar-nav li a span {
   padding: 5px 12px;
@@ -1822,6 +1822,25 @@ a[href="guitars.html"].inventory:hover {
   .time .wrapper {
     background-attachment: fixed;
   }
+}
+
+/* fix navbar collapse */
+
+.navbar-collapse.collapse.off {
+  display: block!important;
+}
+
+.navbar-collapse.collapse.off ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav.no-collapse>li, .navbar-nav.no-collapse {
+  float: left !important;
+}
+
+.navbar-right.no-collapse {
+  float: right!important;
 }
 
 /*-----------------------------------------------------------------------
