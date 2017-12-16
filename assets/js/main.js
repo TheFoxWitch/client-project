@@ -3,11 +3,11 @@
 --------------------------------------------*/
 
 $(document).ready(function() {
-    
+
     setTimeout(function(){
         $('body').addClass('loaded');
     }, 3000);
-    
+
 });
 
 /*------------------------------------------
@@ -23,7 +23,7 @@ $(document).ready(function() {
             $nav.addClass('navbar-solid');
             return;
         }
-        
+
         $nav.removeClass('navbar-solid');
         $(".navbar-nav > li > a").blur();
     }
@@ -36,6 +36,7 @@ $(document).ready(function() {
 
 })();
 
+jQuery(".collapse.navbar-collapse.in").removeClass("in");
 
 
 
@@ -76,7 +77,7 @@ function navbarSubmenu(width) {
 }
 
 /* ---------------------------------------------- /*
- * Navbar hover dropdown on desctop
+ * Navbar hover dropdown on desktop
  /* ---------------------------------------------- */
 
 function hoverDropdown(width, mobileTest) {
@@ -132,10 +133,10 @@ $(window).resize(function() {
 
 
 /*===============================================================
-		Food Slider (Owl Carousel) 
+		Food Slider (Owl Carousel)
 =================================================================*/
 
-$("#foodSlide").owlCarousel({              
+$("#foodSlide").owlCarousel({
     navigation : true, // Show next and prev buttons
     slideSpeed : 100,
     paginationSpeed : 400,
@@ -148,12 +149,12 @@ $("#foodSlide").owlCarousel({
 
 
 /*===============================================================
-        Available GIftcard (Owl Carousel) 
+        Available GIftcard (Owl Carousel)
 =================================================================*/
 
 $(document).ready(function(){
     if( $(window).width() > 767 ) {
-        $("#availableGiftcard").owlCarousel({              
+        $("#availableGiftcard").owlCarousel({
             navigation : true, // Show next and prev buttons
             slideSpeed : 1500,
             paginationSpeed : 400,
@@ -165,7 +166,7 @@ $(document).ready(function(){
     }
 
     else {
-        $("#availableGiftcard").owlCarousel({              
+        $("#availableGiftcard").owlCarousel({
             navigation : false, // Show next and prev buttons
             slideSpeed : 1500,
             paginationSpeed : 400,
@@ -219,7 +220,7 @@ $(document).ready(function(){
     }
 
     function fixSectionHeight() {
-      
+
         var equalSections = $('.equal_height');
 
         for (index = 0; index < equalSections.length; ++index) {
@@ -244,7 +245,7 @@ $(document).ready(function(){
             fixSectionHeight();
         }
     });
-    
+
 
 });
 
@@ -330,5 +331,3 @@ $(document).ready(function () {
 
     });
 });
-
-
