@@ -1406,6 +1406,13 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 .gallery .gallery-items .item img {
   width: 100%;
   position: relative;
+  transform-style: preserve-3d;
+  transition: all 500ms ease;
+}
+
+.gallery .gallery-item .item img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .gallery .gallery-items .item .image-description {
