@@ -1411,6 +1411,8 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 }
 
 .item:hover img {
+  transform-style: preserve-3d;
+  transition: all 500ms ease;
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
