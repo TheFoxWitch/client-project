@@ -1415,6 +1415,11 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
   transition: all 500ms ease;
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
+  margin-bottom: 20px:
+}
+
+.owl-carousel .owl-item img {
+  transform-style: preserve-3d;
 }
 
 .gallery .gallery-items .item .image-description {
