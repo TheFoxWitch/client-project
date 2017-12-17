@@ -1420,6 +1420,7 @@ input[type=date], input[type=time], input[type=datetime-local], input[type=month
 
 .owl-carousel .owl-item img {
   transform-style: preserve-3d;
+  transition: all 500ms ease;
 }
 
 .gallery .gallery-items .item .image-description {
