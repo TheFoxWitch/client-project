@@ -1823,13 +1823,6 @@ a[href="guitars.html"].inventory:hover {
   }
 }
 
-@media only screen and (max-width: 375px) {
-  .the-text {
-    position: relative;
-    bottom: -96px;
-  }
-}
-
 @media only screen and (max-width: 425px) {
   .the-text h2 {
     font-size: 16pt;
@@ -1847,6 +1840,13 @@ a[href="guitars.html"].inventory:hover {
 @media only screen and (max-width: 425px) {
   .gallery .gallery-items .item img {
     left: -25px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .the-text {
+    position: relative;
+    top: -43px;
   }
 }
 
