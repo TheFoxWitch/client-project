@@ -1744,6 +1744,12 @@ a[href="guitars.html"].inventory:hover {
   color: #e96333;
 }
 
+@media only screen and (min-width: 2500px) {
+  .guitar-container {
+    margin-bottom: 485px;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .the-logo {
     position: relative;
