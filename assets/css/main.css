@@ -1762,8 +1762,8 @@ a[href="guitars.html"].inventory:hover {
 
 @media only screen and (max-width: 425px) {
   .the-logo {
-    top: 4px;
-    max-width: 115px;
+    top: 130px;
+    left: 225px;
   }
 }
 
