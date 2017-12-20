@@ -1767,6 +1767,13 @@ a[href="guitars.html"].inventory:hover {
   }
 }
 
+@media only screen and (max-width: 375px) {
+  .the-logo {
+    top: 88px;
+    left: 212px;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .the-text {
     position: relative;
